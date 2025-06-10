@@ -16,9 +16,6 @@ export const objectCodeUpgrade = async () => {
 
   // Derive the account from the private key
   const account = await Account.fromPrivateKey({ privateKey });
-  console.log("Initialized account:", account.accountAddress.toString());
-
-  console.log(payload.args.map((arg: any) => arg.value));
 
   const metadataBytes = payload.args[0].value as HexInput;
   const bytecode = payload.args[1].value as HexInput[]
@@ -39,7 +36,6 @@ export const objectCodeUpgrade = async () => {
     signerPublicKey: account.publicKey,
     transaction: tx,
   });
-  console.log(userTransactionResponse);
 
   if (!userTransactionResponse.success) {
     console.error("Transaction simulation failed:", userTransactionResponse.vm_status);
@@ -62,5 +58,5 @@ export const objectCodeUpgrade = async () => {
     return;
   }
 
-  console.log("Transaction executed successfully:", executedTransaction);
+  console.log("Transaction executed successfully txHash:", executedTransaction.hash);
 };
