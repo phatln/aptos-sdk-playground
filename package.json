@@ -1,0 +1,35 @@
+{
+  "name": "aptos-sdk-project",
+  "version": "1.0.0",
+  "description": "A TypeScript project for interacting with the Aptos blockchain using the Aptos SDK.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/aptos-sdk-project.git"
+  },
+  "keywords": [
+    "aptos",
+    "blockchain",
+    "typescript",
+    "sdk"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^2.0.1",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/aptos-sdk-project/issues"
+  },
+  "homepage": "https://github.com/yourusername/aptos-sdk-project#readme"
+}
