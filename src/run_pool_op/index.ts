@@ -118,3 +118,74 @@ class Stable {
 export const runPoolOp = async () => {
   console.log("runPoolOp");
 };
+
+export const runPoolOpCLI = async (
+  poolType: 'clmm' | 'stable',
+  poolAddr: string,
+  operation: string,
+  params?: any
+) => {
+  try {
+    if (poolType === 'clmm') {
+      const clmm = new CLMM(poolAddr);
+      
+      switch (operation) {
+        case 'reset-init-price':
+          if (!params?.price) throw new Error('Price parameter is required');
+          await clmm.resetInitPrice(params.price);
+          break;
+        case 'init-blacklist':
+          await clmm.initializePoolBlacklist();
+          break;
+        case 'blacklist-position':
+          if (!params?.posId) throw new Error('Position ID parameter is required');
+          await clmm.blacklistPosition(params.posId);
+          break;
+        case 'unblacklist-position':
+          if (!params?.posId) throw new Error('Position ID parameter is required');
+          await clmm.unblacklistPosition(params.posId);
+          break;
+        default:
+          throw new Error(`Unknown CLMM operation: ${operation}`);
+      }
+    } else if (poolType === 'stable') {
+      const stable = new Stable(poolAddr);
+      
+      switch (operation) {
+        case 'ramp-a':
+          if (!params?.futureA || !params?.futureTime) {
+            throw new Error('Future A and future time parameters are required');
+          }
+          await stable.rampA(params.futureA, params.futureTime);
+          break;
+        case 'stop-ramp-a':
+          await stable.stopRampA();
+          break;
+        case 'set-new-fee':
+          if (!params?.newFee || !params?.newOffpegFeeMultiplier) {
+            throw new Error('New fee and multiplier parameters are required');
+          }
+          await stable.setNewFee(params.newFee, params.newOffpegFeeMultiplier);
+          break;
+        case 'init-blacklist':
+          await stable.initializePoolBlacklist();
+          break;
+        case 'blacklist-position':
+          if (!params?.posId) throw new Error('Position ID parameter is required');
+          await stable.blacklistPosition(params.posId);
+          break;
+        case 'unblacklist-position':
+          if (!params?.posId) throw new Error('Position ID parameter is required');
+          await stable.unblacklistPosition(params.posId);
+          break;
+        default:
+          throw new Error(`Unknown Stable operation: ${operation}`);
+      }
+    } else {
+      throw new Error(`Unknown pool type: ${poolType}`);
+    }
+  } catch (error) {
+    console.error('Error executing pool operation:', error);
+    process.exit(1);
+  }
+};
