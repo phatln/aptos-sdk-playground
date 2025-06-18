@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "run-pool-op": "ts-node src/run_pool_op/index.ts"
   },
   "repository": {
     "type": "git",
