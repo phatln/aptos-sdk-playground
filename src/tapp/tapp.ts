@@ -108,7 +108,7 @@ export class PoolV3 {
     console.log('fix_amount_a', fix_amount_a);
     const lower_tick = asIntN(lower_tick_idx);
     const upper_tick = asIntN(upper_tick_idx);
-    console.log('lower_tick', lower_tick);
-    console.log('upper_tick', upper_tick);
+    console.log(`lower_tick ${lower_tick} p=${TickMath.tickIndexToSqrtPriceX64(lower_tick)}`);
+    console.log(`upper_tick ${upper_tick} p=${TickMath.tickIndexToSqrtPriceX64(upper_tick)}`);
   }
 }
