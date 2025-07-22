@@ -7,6 +7,15 @@ export enum HOOK_TYPE {
 }
 
 export class Tapp {
+  static createPool(args: `0x${string}`) {
+    const bytes = Buffer.from(args.slice(2), 'hex');
+    const deser = new Deserializer(bytes);
+    const hookType = deser.deserializeU8();
+    console.log('hookType', hookType);
+    const hookFactory = new HookFactory(hookType, deser);
+    hookFactory.createPool();
+  }
+
   static createPoolAddLiquidity(args: `0x${string}`) {
     const bytes = Buffer.from(args.slice(2), 'hex');
     const deser = new Deserializer(bytes);
@@ -41,7 +50,7 @@ export class Tapp {
   }
 
   public swap(args: `0x${string}`) {
-
+    
   }
 }
 
