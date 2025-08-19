@@ -1,12 +1,12 @@
-import { HOOK_TYPE, Tapp } from "./tapp";
+import { HOOK_TYPE, TappDeserializer } from "./tapp";
 
 export function run() {
-  Tapp.createPoolAddLiquidity(
-    "0x03023a175f8830099392ee858774be6b0f2f0e8c3212992c8366df17aa31054f4695c5ad4b024a7500877b1429835a45ad3df20d60fd59ea265463784ab68b29d730b80b00000000000080f02bb3e8db720b00000000000000001af2052a01000000c0d8a7000000000001443bf9ffffffffffbcc4060000000000"
+  TappDeserializer.createPoolAddLiquidity(
+    TappDeserializer.hexStringToBytes("0x03023a175f8830099392ee858774be6b0f2f0e8c3212992c8366df17aa31054f4695c5ad4b024a7500877b1429835a45ad3df20d60fd59ea265463784ab68b29d730b80b00000000000080f02bb3e8db720b00000000000000001af2052a01000000c0d8a7000000000001443bf9ffffffffffbcc4060000000000")
   );
 
-  Tapp.addLiquidity(
+  TappDeserializer.addLiquidity(
     HOOK_TYPE.V3,
-    "0x0b94fde47c7263fc8d25ceb3178f07e9c73a567e10a36cb0a922014f540f9ac00000ca9a3b000000007a101a000000000001880fffffffffffffdc15ffffffffffff"
+    TappDeserializer.hexStringToBytes("0x0b94fde47c7263fc8d25ceb3178f07e9c73a567e10a36cb0a922014f540f9ac00000ca9a3b000000007a101a000000000001880fffffffffffffdc15ffffffffffff")
   )
 }

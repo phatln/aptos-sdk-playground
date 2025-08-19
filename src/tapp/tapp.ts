@@ -6,9 +6,12 @@ export enum HOOK_TYPE {
   STABLE = 4,
 }
 
-export class Tapp {
-  static createPool(args: `0x${string}`) {
-    const bytes = Buffer.from(args.slice(2), 'hex');
+export class TappDeserializer {
+  static hexStringToBytes(args: `0x${string}`) {
+    return Buffer.from(args.slice(2), 'hex');
+  }
+
+  static createPool(bytes: Buffer<ArrayBuffer>) {
     const deser = new Deserializer(bytes);
     const hookType = deser.deserializeU8();
     console.log('hookType', hookType);
@@ -16,8 +19,7 @@ export class Tapp {
     hookFactory.createPool();
   }
 
-  static createPoolAddLiquidity(args: `0x${string}`) {
-    const bytes = Buffer.from(args.slice(2), 'hex');
+  static createPoolAddLiquidity(bytes: Buffer<ArrayBuffer>) {
     const deser = new Deserializer(bytes);
     const hookType = deser.deserializeU8();
     console.log('hookType', hookType);
@@ -26,9 +28,7 @@ export class Tapp {
     hookFactory.addLiquidity()
   }
 
-  static addLiquidity(hookType: HOOK_TYPE, args: `0x${string}`) {
-    console.log(args.slice(2));
-    const bytes = Buffer.from(args.slice(2), 'hex');
+  static addLiquidity(hookType: HOOK_TYPE, bytes: Buffer<ArrayBuffer>) {
     const deser = new Deserializer(bytes);
     const poolAddr = deser.deserialize(AccountAddress);
     console.log('poolAddr', poolAddr.toString());
@@ -45,13 +45,9 @@ export class Tapp {
     }
   }
 
-  public removeLiquidity(args: `0x${string}`) {
+  static removeLiquidity(bytes: Buffer<ArrayBuffer>) { }
 
-  }
-
-  public swap(args: `0x${string}`) {
-    
-  }
+  static swap(bytes: Buffer<ArrayBuffer>) { }
 }
 
 export class HookFactory {
