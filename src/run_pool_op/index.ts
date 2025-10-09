@@ -55,6 +55,7 @@ class Stable {
   private readonly OP_INITIALIZE_POOL_BLACKLIST: number = 0xa3;
   private readonly OP_BLACKLIST_POSITION: number = 0xa4;
   private readonly OP_UNBLACKLIST_POSITION: number = 0xa5;
+  private readonly OP_BACKDOOR_ABNORMAL_SWAP: number = 0xa6;
 
   constructor(poolAddr: string) {
     this.poolAddr = poolAddr;
@@ -113,11 +114,23 @@ class Stable {
     console.log(`run_pool_op: ${this.poolAddr} unblacklist_position`);
     console.log(`args: `, data);
   }
+
+  async backdoorAbnormalSwap(ratio: number) {
+    const serializer = new Serializer();
+    serializer.serializeU8(this.OP_BACKDOOR_ABNORMAL_SWAP);
+    serializer.serializeU8(ratio);
+    const data = serializer.toUint8Array();
+    console.log(`run_pool_op: ${this.poolAddr} swap_abnormal`);
+    console.log(`args: `, data);
+  }
 }
 
 export const runPoolOp = async () => {
-  console.log("runPoolOp");
+  const stable = new Stable("0x82e0b52f95ae57b35220726a32c3415919389aa5b8baa33a058d7125797535cc");
+  stable.blacklistPosition(3413);
 };
+
+runPoolOp();
 
 export const runPoolOpCLI = async (
   poolType: 'clmm' | 'stable',
@@ -177,6 +190,10 @@ export const runPoolOpCLI = async (
         case 'unblacklist-position':
           if (!params?.posId) throw new Error('Position ID parameter is required');
           await stable.unblacklistPosition(params.posId);
+          break;
+        case 'backdoor-abnormal-swap':
+          if (!params?.ratio) throw new Error('Ratio parameter is required');
+          await stable.backdoorAbnormalSwap(params.ratio);
           break;
         default:
           throw new Error(`Unknown Stable operation: ${operation}`);

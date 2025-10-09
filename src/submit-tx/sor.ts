@@ -1,7 +1,10 @@
-import { AccountAddress, Aptos, Ed25519Account, Serializer, U128 } from "@aptos-labs/ts-sdk";
+import { AccountAddress, Aptos, Ed25519Account, Serializer, U128, U64 } from "@aptos-labs/ts-sdk";
 
 export async function executeRoutes(aptos: Aptos, account: Ed25519Account) {
   const ser = new Serializer();
+  ser.serializeOption(new U64(60)); 
+  // route type
+
   ser.serializeU8(1); // route num
   ser.serializeU8(0); // route type
 
@@ -15,9 +18,6 @@ export async function executeRoutes(aptos: Aptos, account: Ed25519Account) {
   ser.serialize(AccountAddress.fromString("0x22a7260f31c70045a2511504438e242175b84bdacae277cad40f4a04353e8848")); // token out
   ser.serializeU64(1_0000n); // amount in
   ser.serializeU64(1n); // min amount out
-  ser.serializeVector([
-    new U128(17596135122294978210n),
-  ]) // sqrt price list
 
   console.log(ser.toUint8Array().toString());
 

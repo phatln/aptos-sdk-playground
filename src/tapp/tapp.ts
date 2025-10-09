@@ -1,4 +1,4 @@
-import { AccountAddress, Deserializer } from "@aptos-labs/ts-sdk";
+import { AccountAddress, Deserializer, Serializer, U64 } from "@aptos-labs/ts-sdk";
 import { asIntN, TickMath } from "@cetusprotocol/cetus-sui-clmm-sdk";
 
 export enum HOOK_TYPE {
@@ -6,12 +6,46 @@ export enum HOOK_TYPE {
   STABLE = 4,
 }
 
+export type PoolPositionInput = {
+  pool_addr: AccountAddress | `0x${string}` | string;
+  position_idxes: Array<number | bigint>;
+};
+
 export class TappDeserializer {
   static hexStringToBytes(args: `0x${string}`) {
     return Buffer.from(args.slice(2), 'hex');
   }
 
-  static createPool(bytes: Buffer<ArrayBuffer>) {
+  static arrayToBytes(args: number[]): Uint8Array {
+    return Buffer.from(args) as Uint8Array;
+  }
+
+  static serializegetBatchPositions(input: PoolPositionInput[]): Uint8Array {
+    const serializer = new Serializer();
+    serializer.serializeU64(BigInt(input.length));
+    input.forEach(({ pool_addr, position_idxes }) => {
+      const poolAddress = pool_addr instanceof AccountAddress ? pool_addr : AccountAddress.fromString(pool_addr);
+      serializer.serialize(poolAddress);
+      const positions = position_idxes.map((idx) => new U64(idx));
+      serializer.serializeVector(positions);
+    });
+    return serializer.toUint8Array();
+  }
+
+  static getBatchPositions(bytes: Uint8Array) {
+    const deser = new Deserializer(bytes);
+    const poolNum = deser.deserializeU64();
+    console.log('poolNum', poolNum);
+    
+    for (let index = 0; index < poolNum; index++) {
+      const poolAddr = deser.deserialize(AccountAddress);
+      const positionIdxs = deser.deserializeVector(U64)
+      console.log('poolA', poolAddr);
+      console.log('positionIdxs', positionIdxs);
+    }
+  }
+
+  static createPool(bytes: Uint8Array) {
     const deser = new Deserializer(bytes);
     const hookType = deser.deserializeU8();
     console.log('hookType', hookType);
@@ -19,7 +53,7 @@ export class TappDeserializer {
     hookFactory.createPool();
   }
 
-  static createPoolAddLiquidity(bytes: Buffer<ArrayBuffer>) {
+  static createPoolAddLiquidity(bytes: Uint8Array) {
     const deser = new Deserializer(bytes);
     const hookType = deser.deserializeU8();
     console.log('hookType', hookType);
@@ -28,7 +62,7 @@ export class TappDeserializer {
     hookFactory.addLiquidity()
   }
 
-  static addLiquidity(hookType: HOOK_TYPE, bytes: Buffer<ArrayBuffer>) {
+  static addLiquidity(hookType: HOOK_TYPE, bytes: Uint8Array) {
     const deser = new Deserializer(bytes);
     const poolAddr = deser.deserialize(AccountAddress);
     console.log('poolAddr', poolAddr.toString());
@@ -45,9 +79,9 @@ export class TappDeserializer {
     }
   }
 
-  static removeLiquidity(bytes: Buffer<ArrayBuffer>) { }
+  static removeLiquidity(bytes: Uint8Array) { }
 
-  static swap(bytes: Buffer<ArrayBuffer>) { }
+  static swap(bytes: Uint8Array) { }
 }
 
 export class HookFactory {
