@@ -11,7 +11,8 @@
     "start": "ts-node src/index.ts",
     "submit-tx": "ts-node src/submit-tx/index.ts",
     "run-pool-op": "ts-node src/run_pool_op/index.ts",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "get-pool-meta-paginated": "ts-node src/get-pool-meta-paginated.ts"
   },
   "repository": {
     "type": "git",
