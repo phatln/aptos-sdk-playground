@@ -1,6 +1,6 @@
 import { Account, Aptos, AptosConfig, Ed25519PrivateKey, Network } from '@aptos-labs/ts-sdk';
-import { swapTx } from './swap';
 import * as dotenv from 'dotenv';
+import { buildTx } from './tx-builder';
 dotenv.config();
 
 const aptos = new Aptos(new AptosConfig({ network: Network.MAINNET }));
@@ -9,7 +9,84 @@ const account = Account.fromPrivateKey({
 });
 
 async function run() {
-  const txn = await swapTx(aptos, account);
+  let arg = [
+    [
+      "78",
+      "216",
+      "253",
+      "162",
+      "145",
+      "182",
+      "4",
+      "73",
+      "30",
+      "173",
+      "12",
+      "201",
+      "229",
+      "35",
+      "43",
+      "193",
+      "237",
+      "193",
+      "243",
+      "29",
+      "14",
+      "12",
+      "243",
+      "67",
+      "190",
+      "4",
+      "61",
+      "140",
+      "121",
+      "42",
+      "241",
+      "168",
+      "0",
+      "128",
+      "150",
+      "152",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "72",
+      "243",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "184",
+      "127",
+      "255",
+      "255",
+      "255",
+      "255",
+      "255",
+      "255",
+      "112",
+      "139",
+      "255",
+      "255",
+      "255",
+      "255",
+      "255",
+      "255"
+    ]
+  ];
+  let bz = arg[0].map((v) => Number(v));
+
+  const txn = await buildTx(
+    aptos,
+    account,
+    "0x487e905f899ccb6d46fdaec56ba1e0c4cf119862a16c409904b8c78fab1f5e8a::router::add_liquidity",
+    [ bz ]
+  );
 
   const senderAuthenticator = aptos.transaction.sign({
     signer: account,

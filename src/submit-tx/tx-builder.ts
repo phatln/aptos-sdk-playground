@@ -71,16 +71,19 @@ const args = [
   ]
 ];
 
-export async function swapTx(aptos: Aptos, account: Ed25519Account): Promise<SimpleTransaction> {
-  let bz = args[0].map((v) => Number(v));
-
+export async function buildTx(
+  aptos: Aptos, 
+  account: Ed25519Account,
+  functionName: `${string}::${string}::${string}`,
+  functionArgs: any[],
+  typeArgs?: any[],
+): Promise<SimpleTransaction> {
   const txn = await aptos.transaction.build.simple({
     sender: account.accountAddress,
     data: {
-      function: '0xd32e6ce3789e21aac32f8a7623994681f7235eac9f6d323ff0277295a9364b88::router::swap',
-      functionArguments: [
-        bz,
-      ],
+      function: functionName,
+      functionArguments: functionArgs,
+      typeArguments: typeArgs,
     },
   });
 
