@@ -1,3 +1,4 @@
+import { AccountAddress, Serializer } from "@aptos-labs/ts-sdk";
 import { HOOK_TYPE, TappDeserializer } from "./tapp";
 
 export function run() {
@@ -12,13 +13,21 @@ export function run() {
   //   TappDeserializer.hexStringToBytes("0x0b94fde47c7263fc8d25ceb3178f07e9c73a567e10a36cb0a922014f540f9ac00000ca9a3b000000007a101a000000000001880fffffffffffffdc15ffffffffffff")
   // )
 
-  const a = TappDeserializer.serializegetBatchPositions([
-    {
-      pool_addr: "0x259bfb3a089623c01a40bfa9658830bccd0be69775f60932ac8881c9bebab1e5",
-      position_idxes: [0, 1, 2]
-    }
-  ]);
-  console.log(a.toString());
+  console.log("Tapp Module Test");
+
+  const ser = new Serializer();
+  ser.serialize(AccountAddress.fromString("0x92b0e7194ae1b55cc2b55c127dac4c6a37a832a10bea4f68f02855f997ae3066"));
+  ser.serialize(AccountAddress.fromString("0x96a3c0d17edb4c33d5ca28c57d0a55479798559f815f11ef7b0ab9d9937ff8fa"));
+  const args = ser.toUint8Array();
+  console.log(args);
   
-  TappDeserializer.getBatchPositions(a);
+  // const a = TappDeserializer.serializegetBatchPositions([
+  //   {
+  //     pool_addr: "0x259bfb3a089623c01a40bfa9658830bccd0be69775f60932ac8881c9bebab1e5",
+  //     position_idxes: [0, 1, 2]
+  //   }
+  // ]);
+  // console.log(a.toString());
+
+  // TappDeserializer.getBatchPositions(a);
 }

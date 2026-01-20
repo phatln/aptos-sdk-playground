@@ -84,6 +84,10 @@ export class TappDeserializer {
   static swap(bytes: Uint8Array) { }
 }
 
+export class TappSerializer {
+  
+}
+
 export class HookFactory {
   hookType: HOOK_TYPE;
   deser: Deserializer;
