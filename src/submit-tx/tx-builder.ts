@@ -89,3 +89,12 @@ export async function buildTx(
 
   return txn
 }
+
+export function hexToBytes(hexString: string) {
+  // Convert hex string to byte array
+  const bytes = Buffer.from(hexString, 'hex');
+  const bzArr = Array.from(bytes);
+
+  console.log(bzArr); // [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
+  return bzArr
+}

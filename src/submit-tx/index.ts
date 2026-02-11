@@ -1,9 +1,9 @@
 import { Account, AccountAddress, Aptos, AptosConfig, Ed25519PrivateKey, Network } from '@aptos-labs/ts-sdk';
 import * as dotenv from 'dotenv';
-import { buildTx } from './tx-builder';
+import { buildTx, hexToBytes } from './tx-builder';
 dotenv.config();
 
-const aptos = new Aptos(new AptosConfig({ network: Network.TESTNET }));
+const aptos = new Aptos(new AptosConfig({ network: process.env.NETWORK as Network }));
 const account = Account.fromPrivateKey({
   privateKey: new Ed25519PrivateKey(process.env.PRIVATE_KEY!),
 });
@@ -129,10 +129,9 @@ async function run() {
   const txn = await buildTx(
     aptos,
     account,
-    "0x70f01f95703437028440812d10f65a55372deb9d336e245bf3120db7aadb4c5f::ve::gauge_uncommit",
+    "0x487e905f899ccb6d46fdaec56ba1e0c4cf119862a16c409904b8c78fab1f5e8a::router::remove_liquidity",
     [
-      AccountAddress.from("0x4a281080bf0226c0a1d3bf3827d561982d5143ee4fa36f6a2be7c5109f84b9fb"),
-      AccountAddress.from("0x0f1a16521bf6cb902fc57ef72051dc88026f589e1e413cf1e739b300fcc42d86"),
+      hexToBytes("0x4ed8fda291b604491ead0cc9e5232bc1edc1f31d0e0cf343be043d8c792af1a802ef07e6acd8c9f4063c75e20ed075e637be795d444753b6f44f555816fee8235fd401000000000000000000000000007c4c0000000000000000000000000000")
     ]
   )
 
@@ -161,8 +160,3 @@ async function run() {
 }
 
 run();
-
-// Convert hex string to byte array
-// const hexString = "676a9fa00b2a859bf4d08332b5c0efbaf9dbb33e0e99c051e5a3e7fefb301702000110270000000000000000000000000000ae331ba8327fbb35b1c4feff00000000";
-// const bytes = Buffer.from(hexString, 'hex');
-// console.log(Array.from(bytes)); // [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
