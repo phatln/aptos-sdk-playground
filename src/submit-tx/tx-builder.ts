@@ -92,6 +92,7 @@ export async function buildTx(
 
 export function hexToBytes(hexString: string) {
   // Convert hex string to byte array
+  hexString = hexString.includes("0x") ? hexString.slice(2) : hexString;
   const bytes = Buffer.from(hexString, 'hex');
   const bzArr = Array.from(bytes);
 
