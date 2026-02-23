@@ -129,9 +129,23 @@ async function run() {
   const txn = await buildTx(
     aptos,
     account,
-    "0x487e905f899ccb6d46fdaec56ba1e0c4cf119862a16c409904b8c78fab1f5e8a::router::remove_liquidity",
+    "0x456f3d13a66465b004aaa74e805363ca397c315f565551bdd6090f7d747c00ba::voter::claim_all",
     [
-      hexToBytes("0x4ed8fda291b604491ead0cc9e5232bc1edc1f31d0e0cf343be043d8c792af1a802ef07e6acd8c9f4063c75e20ed075e637be795d444753b6f44f555816fee8235fd401000000000000000000000000007c4c0000000000000000000000000000")
+      AccountAddress.from("0xc7da2057cf882197941085d0af27ce474da3a911abe6d2ba3cecdb11dd792c76"),
+      [
+        AccountAddress.from("0x5e1b3a33ef68351b50456e924011c8a53fcc110644c8f80e0be2f10516fe4214")
+      ],
+      [
+        [
+          AccountAddress.from("0x7538e517af47371976af23a1052bc64172cc65a029d1ef75b453a33d520f0b7f"),
+          AccountAddress.from("0x8c58fb7fd3ccb2d7bc079dcbf924567fccd385b24b0f8afbfdebf87dc671ba07")
+        ]
+      ],
+      [
+        [
+          AccountAddress.from("0xb61f9f829842869968edba4b88f0cf785ac6729fd664f50c7be8c630fd2daebc")
+        ]
+      ]
     ]
   )
 

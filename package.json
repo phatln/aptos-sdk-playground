@@ -13,7 +13,8 @@
     "run-pool-op": "ts-node src/run_pool_op/index.ts",
     "dev": "ts-node src/index.ts",
     "get-pool-meta-paginated": "ts-node src/get-pool-meta-paginated.ts",
-    "clmm-eval": "ts-node src/clmm-eval/index.ts"
+    "clmm-eval": "ts-node src/clmm-eval/index.ts",
+    "serialize": "ts-node src/serialize/index.ts"
   },
   "repository": {
     "type": "git",

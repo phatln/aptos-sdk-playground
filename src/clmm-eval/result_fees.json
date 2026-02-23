@@ -1,0 +1,3658 @@
+[
+  {
+    "position_idx": "3150",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "488305",
+        "fees_owed": [
+          "9499",
+          "397"
+        ]
+      },
+      {
+        "transaction_version": "4291252025",
+        "shares": "-488305",
+        "fees_owed": [
+          "9499",
+          "397"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "7911",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "12919649",
+        "fees_owed": [
+          "55564",
+          "944"
+        ]
+      },
+      {
+        "transaction_version": "4293048268",
+        "shares": "-12919649",
+        "fees_owed": [
+          "55564",
+          "944"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "27382",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "4399733592",
+        "fees_owed": [
+          "10248550",
+          "156963"
+        ]
+      },
+      {
+        "transaction_version": "4292542404",
+        "shares": "-4399733592",
+        "fees_owed": [
+          "10248550",
+          "156963"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "27409",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "4962996585",
+        "fees_owed": [
+          "8649997",
+          "131870"
+        ]
+      },
+      {
+        "transaction_version": "4295549918",
+        "shares": "-4962996585",
+        "fees_owed": [
+          "8649997",
+          "131870"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "27410",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "5519328354",
+        "fees_owed": [
+          "9743276",
+          "148359"
+        ]
+      },
+      {
+        "transaction_version": "4295574710",
+        "shares": "-5519328354",
+        "fees_owed": [
+          "9743276",
+          "148359"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "27413",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "5163986656",
+        "fees_owed": [
+          "9336208",
+          "142500"
+        ]
+      },
+      {
+        "transaction_version": "4295616851",
+        "shares": "-5163986656",
+        "fees_owed": [
+          "9336208",
+          "142500"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "27415",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "4873517153",
+        "fees_owed": [
+          "8496794",
+          "129542"
+        ]
+      },
+      {
+        "transaction_version": "4295589541",
+        "shares": "-4873517153",
+        "fees_owed": [
+          "8496794",
+          "129542"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "27417",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "4776677059",
+        "fees_owed": [
+          "8155594",
+          "124234"
+        ]
+      },
+      {
+        "transaction_version": "4295629942",
+        "shares": "-4776677059",
+        "fees_owed": [
+          "8155594",
+          "124234"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "45110",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "4737473332",
+        "fees_owed": [
+          "6518354",
+          "80723"
+        ]
+      },
+      {
+        "transaction_version": "4298527981",
+        "shares": "-4737473332",
+        "fees_owed": [
+          "6518354",
+          "80723"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "45199",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "4571897201",
+        "fees_owed": [
+          "6877856",
+          "84996"
+        ]
+      },
+      {
+        "transaction_version": "4298524924",
+        "shares": "-4571897201",
+        "fees_owed": [
+          "6877856",
+          "84996"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "46042",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "1118940985",
+        "fees_owed": [
+          "3305409",
+          "39923"
+        ]
+      },
+      {
+        "transaction_version": "4291376982",
+        "shares": "-1118940985",
+        "fees_owed": [
+          "3305409",
+          "39923"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "48372",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "1818136401",
+        "fees_owed": [
+          "7925021",
+          "88204"
+        ]
+      },
+      {
+        "transaction_version": "4292256576",
+        "shares": "-1818136401",
+        "fees_owed": [
+          "8189420",
+          "90805"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "52326",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "1051880818",
+        "fees_owed": [
+          "278076",
+          "2738"
+        ]
+      },
+      {
+        "transaction_version": "4291375209",
+        "shares": "-1051880818",
+        "fees_owed": [
+          "278076",
+          "2738"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53228",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "64637532817",
+        "fees_owed": [
+          "9597000",
+          "97400"
+        ]
+      },
+      {
+        "transaction_version": "4287455661",
+        "shares": "-64637532817",
+        "fees_owed": [
+          "10027440",
+          "97400"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53650",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "195179085229704",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4286967545",
+        "shares": "-195179085229704",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53651",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "194691933505117",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4286967373",
+        "shares": "-194691933505117",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53652",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "194614677173263",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4286966828",
+        "shares": "-194614677173263",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53653",
+    "txs": [
+      {
+        "transaction_version": "4286956359",
+        "shares": "195101635589631",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4286967587",
+        "shares": "-195101635589631",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53654",
+    "txs": [
+      {
+        "transaction_version": "4286967770",
+        "shares": "10378679",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4286969972",
+        "shares": "-10378679",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53655",
+    "txs": [
+      {
+        "transaction_version": "4287467110",
+        "shares": "38985337575",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4292784580",
+        "shares": "-38985337575",
+        "fees_owed": [
+          "5409753",
+          "55766"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53656",
+    "txs": [
+      {
+        "transaction_version": "4287544566",
+        "shares": "103478533",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4287547429",
+        "shares": "-103478533",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53657",
+    "txs": [
+      {
+        "transaction_version": "4290205186",
+        "shares": "653931460872",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4292764072",
+        "shares": "-653931460872",
+        "fees_owed": [
+          "2411435",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53658",
+    "txs": [
+      {
+        "transaction_version": "4291407512",
+        "shares": "1032988462",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53659",
+    "txs": [
+      {
+        "transaction_version": "4291409560",
+        "shares": "1032988462",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53660",
+    "txs": [
+      {
+        "transaction_version": "4291411382",
+        "shares": "1032988462",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53661",
+    "txs": [
+      {
+        "transaction_version": "4292262261",
+        "shares": "2636629334",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4292572552",
+        "shares": "-2636629334",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53662",
+    "txs": [
+      {
+        "transaction_version": "4292793749",
+        "shares": "58537611157",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53663",
+    "txs": [
+      {
+        "transaction_version": "4294418113",
+        "shares": "201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294429534",
+        "shares": "-201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53664",
+    "txs": [
+      {
+        "transaction_version": "4294418113",
+        "shares": "200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294429341",
+        "shares": "-200821595881202",
+        "fees_owed": [
+          "511656458",
+          "47884"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53665",
+    "txs": [
+      {
+        "transaction_version": "4294418113",
+        "shares": "200842667674428",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294429475",
+        "shares": "-200842667674428",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53666",
+    "txs": [
+      {
+        "transaction_version": "4294418113",
+        "shares": "201345209562982",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294429419",
+        "shares": "-201345209562982",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53667",
+    "txs": [
+      {
+        "transaction_version": "4294437302",
+        "shares": "201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294446526",
+        "shares": "-201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53668",
+    "txs": [
+      {
+        "transaction_version": "4294437302",
+        "shares": "200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294446262",
+        "shares": "-200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53669",
+    "txs": [
+      {
+        "transaction_version": "4294437302",
+        "shares": "200849459667981",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294446034",
+        "shares": "-200849459667981",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53670",
+    "txs": [
+      {
+        "transaction_version": "4294437302",
+        "shares": "201352018551282",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294446133",
+        "shares": "-201352018551282",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53671",
+    "txs": [
+      {
+        "transaction_version": "4294454593",
+        "shares": "201223453193545",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294463573",
+        "shares": "-201223453193545",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53672",
+    "txs": [
+      {
+        "transaction_version": "4294454593",
+        "shares": "200721215199473",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294463428",
+        "shares": "-200721215199473",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53673",
+    "txs": [
+      {
+        "transaction_version": "4294454593",
+        "shares": "200694035518955",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294463496",
+        "shares": "-200694035518955",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53674",
+    "txs": [
+      {
+        "transaction_version": "4294454593",
+        "shares": "201196205505040",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294463624",
+        "shares": "-201196205505040",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53675",
+    "txs": [
+      {
+        "transaction_version": "4294469891",
+        "shares": "201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294485136",
+        "shares": "-201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53676",
+    "txs": [
+      {
+        "transaction_version": "4294469891",
+        "shares": "200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294485147",
+        "shares": "-200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53677",
+    "txs": [
+      {
+        "transaction_version": "4294469891",
+        "shares": "200885735664587",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294484937",
+        "shares": "-200885735664587",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53678",
+    "txs": [
+      {
+        "transaction_version": "4294469891",
+        "shares": "201388385316488",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294485040",
+        "shares": "-201388385316488",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53679",
+    "txs": [
+      {
+        "transaction_version": "4294488297",
+        "shares": "201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294492254",
+        "shares": "-201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53680",
+    "txs": [
+      {
+        "transaction_version": "4294488297",
+        "shares": "200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294492286",
+        "shares": "-200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53681",
+    "txs": [
+      {
+        "transaction_version": "4294488297",
+        "shares": "200986269374590",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294492121",
+        "shares": "-200986269374590",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53682",
+    "txs": [
+      {
+        "transaction_version": "4294488297",
+        "shares": "201489170578463",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294492169",
+        "shares": "-201489170578463",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53683",
+    "txs": [
+      {
+        "transaction_version": "4294496573",
+        "shares": "201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294505246",
+        "shares": "-201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53684",
+    "txs": [
+      {
+        "transaction_version": "4294496573",
+        "shares": "200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294505311",
+        "shares": "-200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53685",
+    "txs": [
+      {
+        "transaction_version": "4294496573",
+        "shares": "200946117251933",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294505402",
+        "shares": "-200946117251933",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53686",
+    "txs": [
+      {
+        "transaction_version": "4294496573",
+        "shares": "201448917988491",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294505583",
+        "shares": "-201448917988491",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53687",
+    "txs": [
+      {
+        "transaction_version": "4294510281",
+        "shares": "201525499749546",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294520420",
+        "shares": "-201525499749546",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53688",
+    "txs": [
+      {
+        "transaction_version": "4294510281",
+        "shares": "201022507870904",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294520269",
+        "shares": "-201022507870904",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53689",
+    "txs": [
+      {
+        "transaction_version": "4294510281",
+        "shares": "201044916230612",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294520386",
+        "shares": "-201044916230612",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53690",
+    "txs": [
+      {
+        "transaction_version": "4294510281",
+        "shares": "201547964178711",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294520359",
+        "shares": "-201547964178711",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53691",
+    "txs": [
+      {
+        "transaction_version": "4294527425",
+        "shares": "201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294538296",
+        "shares": "-201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53692",
+    "txs": [
+      {
+        "transaction_version": "4294527425",
+        "shares": "200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294538226",
+        "shares": "-200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53693",
+    "txs": [
+      {
+        "transaction_version": "4294527425",
+        "shares": "200812669494006",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294538188",
+        "shares": "-200812669494006",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53694",
+    "txs": [
+      {
+        "transaction_version": "4294527425",
+        "shares": "201315136322104",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294538318",
+        "shares": "-201315136322104",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53695",
+    "txs": [
+      {
+        "transaction_version": "4294542357",
+        "shares": "201525499749546",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294555081",
+        "shares": "-201525499749546",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53696",
+    "txs": [
+      {
+        "transaction_version": "4294542357",
+        "shares": "201022507870904",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294554887",
+        "shares": "-201022507870904",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53697",
+    "txs": [
+      {
+        "transaction_version": "4294542357",
+        "shares": "200957557749100",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294554799",
+        "shares": "-200957557749100",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53698",
+    "txs": [
+      {
+        "transaction_version": "4294542357",
+        "shares": "201460387111870",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294554964",
+        "shares": "-201460387111870",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53699",
+    "txs": [
+      {
+        "transaction_version": "4294560568",
+        "shares": "201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294578770",
+        "shares": "-201424767221444",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53700",
+    "txs": [
+      {
+        "transaction_version": "4294560568",
+        "shares": "200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294578611",
+        "shares": "-200922026763310",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53701",
+    "txs": [
+      {
+        "transaction_version": "4294560568",
+        "shares": "200871595749490",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294578514",
+        "shares": "-200871595749490",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53702",
+    "txs": [
+      {
+        "transaction_version": "4294560568",
+        "shares": "201374210020829",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294578428",
+        "shares": "-201374210020829",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53703",
+    "txs": [
+      {
+        "transaction_version": "4294583348",
+        "shares": "201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294595671",
+        "shares": "-201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53704",
+    "txs": [
+      {
+        "transaction_version": "4294583348",
+        "shares": "200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294595517",
+        "shares": "-200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53705",
+    "txs": [
+      {
+        "transaction_version": "4294583348",
+        "shares": "200872075276474",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294595636",
+        "shares": "-200872075276474",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53706",
+    "txs": [
+      {
+        "transaction_version": "4294583348",
+        "shares": "201374690747670",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294595550",
+        "shares": "-201374690747670",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53707",
+    "txs": [
+      {
+        "transaction_version": "4294599510",
+        "shares": "201525499749546",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294614817",
+        "shares": "-201525499749546",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53708",
+    "txs": [
+      {
+        "transaction_version": "4294599510",
+        "shares": "201022507870904",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294614517",
+        "shares": "-201022507870904",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53709",
+    "txs": [
+      {
+        "transaction_version": "4294599510",
+        "shares": "200933027215501",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294614664",
+        "shares": "-200933027215501",
+        "fees_owed": [
+          "0",
+          "4238985"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53710",
+    "txs": [
+      {
+        "transaction_version": "4294599510",
+        "shares": "201435795198781",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294614719",
+        "shares": "-201435795198781",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53711",
+    "txs": [
+      {
+        "transaction_version": "4294629493",
+        "shares": "201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294639581",
+        "shares": "-201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53712",
+    "txs": [
+      {
+        "transaction_version": "4294629493",
+        "shares": "200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294639599",
+        "shares": "-200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53713",
+    "txs": [
+      {
+        "transaction_version": "4294629493",
+        "shares": "200555071577191",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294639530",
+        "shares": "-200555071577191",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53714",
+    "txs": [
+      {
+        "transaction_version": "4294629493",
+        "shares": "201056893852291",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294639668",
+        "shares": "-201056893852291",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53715",
+    "txs": [
+      {
+        "transaction_version": "4294644021",
+        "shares": "201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294673728",
+        "shares": "-201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53716",
+    "txs": [
+      {
+        "transaction_version": "4294644021",
+        "shares": "200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294673883",
+        "shares": "-200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53717",
+    "txs": [
+      {
+        "transaction_version": "4294644021",
+        "shares": "200636993569122",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294673834",
+        "shares": "-200636993569122",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53718",
+    "txs": [
+      {
+        "transaction_version": "4294644021",
+        "shares": "201139020826613",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294673662",
+        "shares": "-201139020826613",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53719",
+    "txs": [
+      {
+        "transaction_version": "4294678564",
+        "shares": "201022340368996",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294689712",
+        "shares": "-201022340368996",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53720",
+    "txs": [
+      {
+        "transaction_version": "4294678564",
+        "shares": "200520604336798",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294689480",
+        "shares": "-200520604336798",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53721",
+    "txs": [
+      {
+        "transaction_version": "4294678564",
+        "shares": "200554293752006",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294689556",
+        "shares": "-200554293752006",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53722",
+    "txs": [
+      {
+        "transaction_version": "4294678564",
+        "shares": "201056114080768",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294689526",
+        "shares": "-201056114080768",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53723",
+    "txs": [
+      {
+        "transaction_version": "4294695378",
+        "shares": "201223453193545",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294707445",
+        "shares": "-201223453193545",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53724",
+    "txs": [
+      {
+        "transaction_version": "4294695378",
+        "shares": "200721215199473",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294707304",
+        "shares": "-200721215199473",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53725",
+    "txs": [
+      {
+        "transaction_version": "4294695378",
+        "shares": "200719006878807",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294707394",
+        "shares": "-200719006878807",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53726",
+    "txs": [
+      {
+        "transaction_version": "4294695378",
+        "shares": "201221239347359",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294707275",
+        "shares": "-201221239347359",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53727",
+    "txs": [
+      {
+        "transaction_version": "4294712318",
+        "shares": "201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294729398",
+        "shares": "-201324085044500",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53728",
+    "txs": [
+      {
+        "transaction_version": "4294712318",
+        "shares": "200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294729598",
+        "shares": "-200821595881202",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53729",
+    "txs": [
+      {
+        "transaction_version": "4294712318",
+        "shares": "200872824733828",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294729493",
+        "shares": "-200872824733828",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53730",
+    "txs": [
+      {
+        "transaction_version": "4294712318",
+        "shares": "201375442080425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294729323",
+        "shares": "-201375442080425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53731",
+    "txs": [
+      {
+        "transaction_version": "4294735839",
+        "shares": "201223453193545",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294762281",
+        "shares": "-201223453193545",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53732",
+    "txs": [
+      {
+        "transaction_version": "4294735839",
+        "shares": "200721215199473",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294762202",
+        "shares": "-200721215199473",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53733",
+    "txs": [
+      {
+        "transaction_version": "4294735839",
+        "shares": "200685275053313",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294762158",
+        "shares": "-200685275053313",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53734",
+    "txs": [
+      {
+        "transaction_version": "4294735839",
+        "shares": "201187423119205",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294762051",
+        "shares": "-201187423119205",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53735",
+    "txs": [
+      {
+        "transaction_version": "4294765989",
+        "shares": "201022340368996",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294770415",
+        "shares": "-201022340368996",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53736",
+    "txs": [
+      {
+        "transaction_version": "4294765989",
+        "shares": "200520604336798",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294770191",
+        "shares": "-200520604336798",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53737",
+    "txs": [
+      {
+        "transaction_version": "4294765989",
+        "shares": "200549559084346",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294770262",
+        "shares": "-200549559084346",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53738",
+    "txs": [
+      {
+        "transaction_version": "4294765989",
+        "shares": "201051367566336",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294769960",
+        "shares": "-201051367566336",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53739",
+    "txs": [
+      {
+        "transaction_version": "4294769074",
+        "shares": "19451348",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53740",
+    "txs": [
+      {
+        "transaction_version": "4294777938",
+        "shares": "201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294790770",
+        "shares": "-201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53741",
+    "txs": [
+      {
+        "transaction_version": "4294777938",
+        "shares": "200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294807423",
+        "shares": "-200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53742",
+    "txs": [
+      {
+        "transaction_version": "4294777938",
+        "shares": "200561813468542",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294807557",
+        "shares": "-200561813468542",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53743",
+    "txs": [
+      {
+        "transaction_version": "4294777938",
+        "shares": "201063652613025",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294790813",
+        "shares": "-201063652613025",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53744",
+    "txs": [
+      {
+        "transaction_version": "4294809934",
+        "shares": "201022340368996",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294833321",
+        "shares": "-201022340368996",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53745",
+    "txs": [
+      {
+        "transaction_version": "4294809934",
+        "shares": "200520604336798",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294814735",
+        "shares": "-200520604336798",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53746",
+    "txs": [
+      {
+        "transaction_version": "4294809934",
+        "shares": "200541342853106",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294814669",
+        "shares": "-200541342853106",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53747",
+    "txs": [
+      {
+        "transaction_version": "4294809934",
+        "shares": "201043130776579",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294814613",
+        "shares": "-201043130776579",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53748",
+    "txs": [
+      {
+        "transaction_version": "4294838549",
+        "shares": "201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294848687",
+        "shares": "-201122871643425",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53749",
+    "txs": [
+      {
+        "transaction_version": "4294838549",
+        "shares": "200620884693032",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294848878",
+        "shares": "-200620884693032",
+        "fees_owed": [
+          "1020727809",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53750",
+    "txs": [
+      {
+        "transaction_version": "4294838549",
+        "shares": "200633811539916",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294848598",
+        "shares": "-200633811539916",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53751",
+    "txs": [
+      {
+        "transaction_version": "4294838549",
+        "shares": "201135830835527",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294848784",
+        "shares": "-201135830835527",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53752",
+    "txs": [
+      {
+        "transaction_version": "4294853243",
+        "shares": "200921859345128",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294865779",
+        "shares": "-200921859345128",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53753",
+    "txs": [
+      {
+        "transaction_version": "4294853243",
+        "shares": "200420374105703",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294865342",
+        "shares": "-200420374105703",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53754",
+    "txs": [
+      {
+        "transaction_version": "4294853243",
+        "shares": "200447694412787",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294865476",
+        "shares": "-200447694412787",
+        "fees_owed": [
+          "498215",
+          "6362085"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53755",
+    "txs": [
+      {
+        "transaction_version": "4294853243",
+        "shares": "200949248012316",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294865676",
+        "shares": "-200949248012316",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53756",
+    "txs": [
+      {
+        "transaction_version": "4294872452",
+        "shares": "200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294885045",
+        "shares": "-200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53757",
+    "txs": [
+      {
+        "transaction_version": "4294872452",
+        "shares": "199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294884898",
+        "shares": "-199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53758",
+    "txs": [
+      {
+        "transaction_version": "4294872452",
+        "shares": "199877090587057",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294884808",
+        "shares": "-199877090587057",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53759",
+    "txs": [
+      {
+        "transaction_version": "4294872452",
+        "shares": "200377216440565",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294884707",
+        "shares": "-200377216440565",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53760",
+    "txs": [
+      {
+        "transaction_version": "4294891306",
+        "shares": "200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294903154",
+        "shares": "-200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53761",
+    "txs": [
+      {
+        "transaction_version": "4294891306",
+        "shares": "199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294902969",
+        "shares": "-199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53762",
+    "txs": [
+      {
+        "transaction_version": "4294891306",
+        "shares": "199880942963826",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294902732",
+        "shares": "-199880942963826",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53763",
+    "txs": [
+      {
+        "transaction_version": "4294891306",
+        "shares": "200381078456512",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294902810",
+        "shares": "-200381078456512",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53764",
+    "txs": [
+      {
+        "transaction_version": "4294909828",
+        "shares": "200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294925147",
+        "shares": "-200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53765",
+    "txs": [
+      {
+        "transaction_version": "4294909828",
+        "shares": "199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294925192",
+        "shares": "-199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53766",
+    "txs": [
+      {
+        "transaction_version": "4294909828",
+        "shares": "199860683101029",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294925233",
+        "shares": "-199860683101029",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53767",
+    "txs": [
+      {
+        "transaction_version": "4294909828",
+        "shares": "200360767900201",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294925279",
+        "shares": "-200360767900201",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53768",
+    "txs": [
+      {
+        "transaction_version": "4294932348",
+        "shares": "200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294946093",
+        "shares": "-200420207105523",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53769",
+    "txs": [
+      {
+        "transaction_version": "4294932348",
+        "shares": "199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294946049",
+        "shares": "-199919973950835",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53770",
+    "txs": [
+      {
+        "transaction_version": "4294932348",
+        "shares": "199831386714842",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294945998",
+        "shares": "-199831386714842",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53771",
+    "txs": [
+      {
+        "transaction_version": "4294932348",
+        "shares": "200331398209519",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294945878",
+        "shares": "-200331398209519",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53772",
+    "txs": [
+      {
+        "transaction_version": "4294967186",
+        "shares": "200019787265277",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294977917",
+        "shares": "-200019787265277",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53773",
+    "txs": [
+      {
+        "transaction_version": "4294967186",
+        "shares": "199520553527179",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294977691",
+        "shares": "-199520553527179",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53774",
+    "txs": [
+      {
+        "transaction_version": "4294967186",
+        "shares": "199445180957262",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294977814",
+        "shares": "-199445180957262",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53775",
+    "txs": [
+      {
+        "transaction_version": "4294967186",
+        "shares": "199944226100628",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294977580",
+        "shares": "-199944226100628",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53776",
+    "txs": [
+      {
+        "transaction_version": "4294984445",
+        "shares": "200119817162889",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294996397",
+        "shares": "-200119817162889",
+        "fees_owed": [
+          "170823781",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53777",
+    "txs": [
+      {
+        "transaction_version": "4294984445",
+        "shares": "199620333757994",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294996144",
+        "shares": "-199620333757994",
+        "fees_owed": [
+          "1039459355",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53778",
+    "txs": [
+      {
+        "transaction_version": "4294984445",
+        "shares": "199655916762859",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294996211",
+        "shares": "-199655916762859",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53779",
+    "txs": [
+      {
+        "transaction_version": "4294984445",
+        "shares": "200155489202486",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4294996021",
+        "shares": "-200155489202486",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53780",
+    "txs": [
+      {
+        "transaction_version": "4295005485",
+        "shares": "200320027057988",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295018363",
+        "shares": "-200320027057988",
+        "fees_owed": [
+          "374845693",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53781",
+    "txs": [
+      {
+        "transaction_version": "4295005485",
+        "shares": "199820043944860",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295017830",
+        "shares": "-199820043944860",
+        "fees_owed": [
+          "671899713",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53782",
+    "txs": [
+      {
+        "transaction_version": "4295005485",
+        "shares": "199878470146927",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295017946",
+        "shares": "-199878470146927",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53783",
+    "txs": [
+      {
+        "transaction_version": "4295005485",
+        "shares": "200378599452257",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295018148",
+        "shares": "-200378599452257",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53784",
+    "txs": [
+      {
+        "transaction_version": "4295031057",
+        "shares": "200520437253101",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298782524",
+        "shares": "-200520437253101",
+        "fees_owed": [
+          "20448698286",
+          "232037348"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53785",
+    "txs": [
+      {
+        "transaction_version": "4295031057",
+        "shares": "200019953931807",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295043453",
+        "shares": "-200019953931807",
+        "fees_owed": [
+          "245894175",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53786",
+    "txs": [
+      {
+        "transaction_version": "4295031057",
+        "shares": "200082306739697",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295043653",
+        "shares": "-200082306739697",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53787",
+    "txs": [
+      {
+        "transaction_version": "4295031057",
+        "shares": "200582946078171",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4295043930",
+        "shares": "-200582946078171",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53788",
+    "txs": [
+      {
+        "transaction_version": "4298784716",
+        "shares": "200620717525777",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298791277",
+        "shares": "-200620717525777",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53789",
+    "txs": [
+      {
+        "transaction_version": "4298784716",
+        "shares": "200119983912769",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298791215",
+        "shares": "-200119983912769",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53790",
+    "txs": [
+      {
+        "transaction_version": "4298784716",
+        "shares": "200102046191134",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298791105",
+        "shares": "-200102046191134",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53791",
+    "txs": [
+      {
+        "transaction_version": "4298784716",
+        "shares": "200602734921101",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298791230",
+        "shares": "-200602734921101",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53792",
+    "txs": [
+      {
+        "transaction_version": "4298797771",
+        "shares": "200721047948617",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298806211",
+        "shares": "-200721047948617",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53793",
+    "txs": [
+      {
+        "transaction_version": "4298797771",
+        "shares": "200220063918725",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298806341",
+        "shares": "-200220063918725",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53794",
+    "txs": [
+      {
+        "transaction_version": "4298797771",
+        "shares": "200265160388157",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298806235",
+        "shares": "-200265160388157",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53795",
+    "txs": [
+      {
+        "transaction_version": "4298797771",
+        "shares": "200766257257102",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298806307",
+        "shares": "-200766257257102",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53796",
+    "txs": [
+      {
+        "transaction_version": "4298810136",
+        "shares": "180513478286968",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298824750",
+        "shares": "-180513478286968",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53797",
+    "txs": [
+      {
+        "transaction_version": "4298810136",
+        "shares": "200019953931807",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298824644",
+        "shares": "-200019953931807",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53798",
+    "txs": [
+      {
+        "transaction_version": "4298810136",
+        "shares": "200104995606121",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298824699",
+        "shares": "-200104995606121",
+        "fees_owed": [
+          "59785",
+          "10171735"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53799",
+    "txs": [
+      {
+        "transaction_version": "4298810136",
+        "shares": "225625032652177",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298824587",
+        "shares": "-225625032652177",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53800",
+    "txs": [
+      {
+        "transaction_version": "4298827304",
+        "shares": "199919807367613",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298832428",
+        "shares": "-199919807367613",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53801",
+    "txs": [
+      {
+        "transaction_version": "4298827304",
+        "shares": "199420823171517",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298832343",
+        "shares": "-199420823171517",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53802",
+    "txs": [
+      {
+        "transaction_version": "4298827304",
+        "shares": "199433588147856",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298832322",
+        "shares": "-199433588147856",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53803",
+    "txs": [
+      {
+        "transaction_version": "4298827304",
+        "shares": "199932604284078",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298832498",
+        "shares": "-199932604284078",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53804",
+    "txs": [
+      {
+        "transaction_version": "4298840171",
+        "shares": "200219897085453",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298849084",
+        "shares": "-200219897085453",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53805",
+    "txs": [
+      {
+        "transaction_version": "4298840171",
+        "shares": "199720163888902",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298848850",
+        "shares": "-199720163888902",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53806",
+    "txs": [
+      {
+        "transaction_version": "4298840171",
+        "shares": "199671682783962",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298849105",
+        "shares": "-199671682783962",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53807",
+    "txs": [
+      {
+        "transaction_version": "4298840171",
+        "shares": "200171294672806",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298849168",
+        "shares": "-200171294672806",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53808",
+    "txs": [
+      {
+        "transaction_version": "4298851563",
+        "shares": "200320027057988",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298854116",
+        "shares": "-200320027057988",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53809",
+    "txs": [
+      {
+        "transaction_version": "4298851563",
+        "shares": "199820043944860",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298854235",
+        "shares": "-199820043944860",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53810",
+    "txs": [
+      {
+        "transaction_version": "4298851563",
+        "shares": "199859717088628",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298854185",
+        "shares": "-199859717088628",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "position_idx": "53811",
+    "txs": [
+      {
+        "transaction_version": "4298851563",
+        "shares": "200359799470698",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "transaction_version": "4298854151",
+        "shares": "-200359799470698",
+        "fees_owed": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  }
+]
