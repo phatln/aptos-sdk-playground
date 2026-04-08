@@ -1,0 +1,750 @@
+{
+  "network": "mainnet",
+  "limit": 20,
+  "page_size": 200,
+  "fetched_at": "2026-04-08T08:29:41.170Z",
+  "pools": [
+    {
+      "pool_addr": "0xb5afb711ef141908e5a11c42aae6cb4b08ee4bcf1d5a9961cd882d52b53bd1ec",
+      "hook_type": 4,
+      "hook_type_label": "STABLE",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0xa259be733b6a759909f92815927fa213904df6540519568692caf0b068fe8e62"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 867461.24520072,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 86746124520072,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0xa259be733b6a759909f92815927fa213904df6540519568692caf0b068fe8e62",
+          "amount": 4200370.5728974,
+          "color": "#B1C3E7",
+          "img": "https://assets.panora.exchange/tokens/aptos/amAPT.png",
+          "reserve": 420037057289740,
+          "symbol": "amAPT",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, amAPT",
+      "tvl": 4404479.70999403,
+      "reserves": [
+        86746124520072,
+        420037057289740
+      ],
+      "reserves_display": "[86,746,124,520,072, 420,037,057,289,740]"
+    },
+    {
+      "pool_addr": "0x76e7c1ad414f50274b371e51b7a272cf774c7027c2e4433b9f82ab47a6e5527b",
+      "hook_type": 4,
+      "hook_type_label": "STABLE",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b",
+        "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 514911.484027,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 514911484027,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b",
+          "amount": 280919.236374,
+          "color": "#26A17B",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/usdt.svg",
+          "reserve": 280919236374,
+          "symbol": "USDT",
+          "verified": true
+        },
+        {
+          "addr": "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b",
+          "amount": 278139.645568,
+          "color": "#2775CA",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/usdc.svg",
+          "reserve": 278139645568,
+          "symbol": "USDC",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, USDT, USDC",
+      "tvl": 1073802.23470828,
+      "reserves": [
+        514911484027,
+        280919236374,
+        278139645568
+      ],
+      "reserves_display": "[514,911,484,027, 280,919,236,374, 278,139,645,568]"
+    },
+    {
+      "pool_addr": "0x3004b3e808a2ab9e1589d60ebc2f6ac22ed42403764222cf3e91e891d0111545",
+      "hook_type": 3,
+      "hook_type_label": "V3",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0x5b5c9ec5e88ddd6697b5b2f9f0a8e03eae1186c47fa4d934798632dc2987b249"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 745455.10113432,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 74545510113432,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0x5b5c9ec5e88ddd6697b5b2f9f0a8e03eae1186c47fa4d934798632dc2987b249",
+          "amount": 240080.08298883,
+          "color": "#FFFFFF",
+          "img": "https://assets.panora.exchange/tokens/aptos/goAPT.svg",
+          "reserve": 24008008298883,
+          "symbol": "goAPT",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, goAPT",
+      "tvl": 862603.913160497,
+      "reserves": [
+        74545510113432,
+        24008008298883
+      ],
+      "reserves_display": "[74,545,510,113,432, 24,008,008,298,883]"
+    },
+    {
+      "pool_addr": "0xb98e96345d129a6d5775be1c4ef3753b740c8f3a4e1c9d6ea0a4ae2f5681ee61",
+      "hook_type": 4,
+      "hook_type_label": "STABLE",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0x821c94e69bc7ca058c913b7b5e6b0a5c9fd1523d58723a966fb8c1f5ea888105"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 34518.36209108,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 3451836209108,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0x821c94e69bc7ca058c913b7b5e6b0a5c9fd1523d58723a966fb8c1f5ea888105",
+          "amount": 172770.93962949,
+          "color": "#E4FE54",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/kAPT.svg",
+          "reserve": 17277093962949,
+          "symbol": "kAPT",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, kAPT",
+      "tvl": 179240.968843037,
+      "reserves": [
+        3451836209108,
+        17277093962949
+      ],
+      "reserves_display": "[3,451,836,209,108, 17,277,093,962,949]"
+    },
+    {
+      "pool_addr": "0x8f9dd0b94f1c18f96c00dfbff8254f20304f05713bb841d20b203f9446a75b9",
+      "hook_type": 3,
+      "hook_type_label": "V3",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 97731.09059897,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 9773109059897,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b",
+          "amount": 72988.694658,
+          "color": "#26A17B",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/usdt.svg",
+          "reserve": 72988694658,
+          "symbol": "USDT",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, USDT",
+      "tvl": 158356.400419484,
+      "reserves": [
+        9773109059897,
+        72988694658
+      ],
+      "reserves_display": "[9,773,109,059,897, 72,988,694,658]"
+    },
+    {
+      "pool_addr": "0x4ed8fda291b604491ead0cc9e5232bc1edc1f31d0e0cf343be043d8c792af1a8",
+      "hook_type": 3,
+      "hook_type_label": "V3",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 79591.17460699,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 7959117460699,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b",
+          "amount": 72284.260733,
+          "color": "#2775CA",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/usdc.svg",
+          "reserve": 72284260733,
+          "symbol": "USDC",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, USDC",
+      "tvl": 141813.470138431,
+      "reserves": [
+        7959117460699,
+        72284260733
+      ],
+      "reserves_display": "[7,959,117,460,699, 72,284,260,733]"
+    },
+    {
+      "pool_addr": "0xd50dc4fe4995f10aaa9f4ecd5acb0f5f3713ac8715b217325c57bd52e623d0f5",
+      "hook_type": 3,
+      "hook_type_label": "V3",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0x435ad41e7b383cef98899c4e5a22c8dc88ab67b22f95e5663d6c6649298c3a9d"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 47011.92616279,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 4701192616279,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0x435ad41e7b383cef98899c4e5a22c8dc88ab67b22f95e5663d6c6649298c3a9d",
+          "amount": 134801.544802,
+          "color": "#808080",
+          "img": "https://arweave.net/UdqtcXXWBp7pAe1cwbJrue92VrjM8gBpLYyNlXCl5gs",
+          "reserve": 134801544802,
+          "symbol": "RION",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, RION",
+      "tvl": 82020.9522631877,
+      "reserves": [
+        4701192616279,
+        134801544802
+      ],
+      "reserves_display": "[4,701,192,616,279, 134,801,544,802]"
+    },
+    {
+      "pool_addr": "0x82e0b52f95ae57b35220726a32c3415919389aa5b8baa33a058d7125797535cc",
+      "hook_type": 4,
+      "hook_type_label": "STABLE",
+      "assets": [
+        "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b",
+        "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b"
+      ],
+      "tokens": [
+        {
+          "addr": "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b",
+          "amount": 36556.405593,
+          "color": "#26A17B",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/usdt.svg",
+          "reserve": 36556405593,
+          "symbol": "USDT",
+          "verified": true
+        },
+        {
+          "addr": "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b",
+          "amount": 39225.995489,
+          "color": "#2775CA",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/usdc.svg",
+          "reserve": 39225995489,
+          "symbol": "USDC",
+          "verified": true
+        }
+      ],
+      "assets_display": "USDT, USDC",
+      "tvl": 75821.0765911971,
+      "reserves": [
+        36556405593,
+        39225995489
+      ],
+      "reserves_display": "[36,556,405,593, 39,225,995,489]"
+    },
+    {
+      "pool_addr": "0x1967bf3d06eaa967c00d7535aacdc0fba2570820940b42a79ac34b3a7efe7072",
+      "hook_type": 3,
+      "hook_type_label": "V3",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0x7e464f3d2c1aed51cdcbdc653cc5c21526fe424bed2944bdd21dabb389dd7921"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 30964.51584159,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 3096451584159,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0x7e464f3d2c1aed51cdcbdc653cc5c21526fe424bed2944bdd21dabb389dd7921",
+          "amount": 933035.90221163,
+          "color": "#edaec3",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/assets/TAPP.svg",
+          "reserve": 93303590221163,
+          "symbol": "TAPP",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, TAPP",
+      "tvl": 53838.167853206,
+      "reserves": [
+        3096451584159,
+        93303590221163
+      ],
+      "reserves_display": "[3,096,451,584,159, 93,303,590,221,163]"
+    },
+    {
+      "pool_addr": "0x1527374dcf52dee16b4da3bd0952823e12e5f567939b50cfbc4c3d993b529dca",
+      "hook_type": 4,
+      "hook_type_label": "STABLE",
+      "assets": [
+        "0x68844a0d7f2587e726ad0579f3d640865bb4162c08a4589eeda3f9689ec52a3d",
+        "0x81214a80d82035a190fcb76b6ff3c0145161c3a9f33d137f2bbaee4cfec8a387",
+        "0xf599112bc3a5b6092469890d6a2f353f485a6193c9d36626b480704467d3f4c8"
+      ],
+      "tokens": [
+        {
+          "addr": "0x68844a0d7f2587e726ad0579f3d640865bb4162c08a4589eeda3f9689ec52a3d",
+          "amount": 0.01079416,
+          "color": "#F09242",
+          "img": "https://assets.panora.exchange/tokens/aptos/WBTC.png",
+          "reserve": 1079416,
+          "symbol": "WBTC",
+          "verified": true
+        },
+        {
+          "addr": "0x81214a80d82035a190fcb76b6ff3c0145161c3a9f33d137f2bbaee4cfec8a387",
+          "amount": 0.01049085,
+          "color": "#F0C590",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/xBTC.svg",
+          "reserve": 1049085,
+          "symbol": "xBTC",
+          "verified": true
+        },
+        {
+          "addr": "0xf599112bc3a5b6092469890d6a2f353f485a6193c9d36626b480704467d3f4c8",
+          "amount": 0.1643013995,
+          "color": "#242424",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aBTC.svg",
+          "reserve": 1643013995,
+          "symbol": "aBTC",
+          "verified": true
+        }
+      ],
+      "assets_display": "WBTC, xBTC, aBTC",
+      "tvl": 13280.1487815256,
+      "reserves": [
+        1079416,
+        1049085,
+        1643013995
+      ],
+      "reserves_display": "[1,079,416, 1,049,085, 1,643,013,995]"
+    },
+    {
+      "pool_addr": "0xb942d4d020f49410e53c3b52c2c46f02866d790e52e8375f48d512a65e46e04c",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0xd0ab8c2f76cd640455db56ca758a9766a966c88f77920347aac1719edab1df5e"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 6461.07979832,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 646107979832,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0xd0ab8c2f76cd640455db56ca758a9766a966c88f77920347aac1719edab1df5e",
+          "amount": 5670386.6356432,
+          "color": "#000000",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/ama.svg",
+          "reserve": 567038663564320,
+          "symbol": "AMA",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, AMA",
+      "tvl": 11282.5083455485,
+      "reserves": [
+        646107979832,
+        567038663564320
+      ],
+      "reserves_display": "[646,107,979,832, 567,038,663,564,320]"
+    },
+    {
+      "pool_addr": "0x128af42339593a73dad6298e19a57e9c2225e4b4bc4c4410cee789c7059e60f4",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0xf26bcc9b3e5122971555f6cae700e8e2535f31bb266a44726c7b0012f734b4d1"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 3138.18379816,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 313818379816,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0xf26bcc9b3e5122971555f6cae700e8e2535f31bb266a44726c7b0012f734b4d1",
+          "amount": 22304207.002478,
+          "color": "#D387F6",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/bubble.png",
+          "reserve": 2230420700247801,
+          "symbol": "BUBBLE",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, BUBBLE",
+      "tvl": 5480.06805587636,
+      "reserves": [
+        313818379816,
+        2230420700247801
+      ],
+      "reserves_display": "[313,818,379,816, 2,230,420,700,247,801]"
+    },
+    {
+      "pool_addr": "0xcdba6446123f6fd3d39daa4252d8c63494a8f6774e3406bc4279c9a43c58fca4",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0x0828ad8ad7429d0ad5004bc1f60945b879cbd4c826aac682d5cdfba94a476d3a"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1977.32067,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1977320670,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0x0828ad8ad7429d0ad5004bc1f60945b879cbd4c826aac682d5cdfba94a476d3a",
+          "amount": 470946698.469,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafybeih34fcyqjrlqvw5ycgejsraxqp7jcd4wc7jplwkswtht3nfgy76h4",
+          "reserve": 470946698469000,
+          "symbol": "APTDOG",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, APTDOG",
+      "tvl": 3953.5676761903,
+      "reserves": [
+        1977320670,
+        470946698469000
+      ],
+      "reserves_display": "[1,977,320,670, 470,946,698,469,000]"
+    },
+    {
+      "pool_addr": "0x599e3ec98bb31d5dd7bf7540642c87ece566534f22f0c5ff54c137ec16a8c41",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0xbec2a2f1fe06a539bfc54e5ea142a0eb5777968cd1c0864be2c5d1f885b1010a"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1352.765517,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1352765517,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0xbec2a2f1fe06a539bfc54e5ea142a0eb5777968cd1c0864be2c5d1f885b1010a",
+          "amount": 684724199.355077,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafkreihtemivog4bg4magdukct7ak3pvq43oyszdbzx6pjqamburjvulju",
+          "reserve": 684724199355077,
+          "symbol": "WHIMSY",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, WHIMSY",
+      "tvl": 2707.33646533375,
+      "reserves": [
+        1352765517,
+        684724199355077
+      ],
+      "reserves_display": "[1,352,765,517, 684,724,199,355,077]"
+    },
+    {
+      "pool_addr": "0xce0c9aa5383d0d86ec8c5c215692d2f4cca7acb8c0ad63894edead3deaff2f73",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0x4168ccea6e59aab79b6ec57261bea37acb5b3aa577c339fe622fc3138d81d12f"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1276.403366,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1276403366,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0x4168ccea6e59aab79b6ec57261bea37acb5b3aa577c339fe622fc3138d81d12f",
+          "amount": 728757719.325194,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafkreidzuveuefet3ibnlcz4dsertyeleckg52tx5p44ms6wwkymgxlbgi",
+          "reserve": 728757719325194,
+          "symbol": "JET",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, JET",
+      "tvl": 2550.61318560359,
+      "reserves": [
+        1276403366,
+        728757719325194
+      ],
+      "reserves_display": "[1,276,403,366, 728,757,719,325,194]"
+    },
+    {
+      "pool_addr": "0x47de32fa6cbe33c010056c9a8e8f822a26fcbc7f701c103c0008facb01500ca1",
+      "hook_type": 3,
+      "hook_type_label": "V3",
+      "assets": [
+        "0x000000000000000000000000000000000000000000000000000000000000000a",
+        "0x42556039b88593e768c97ab1a3ab0c6a17230825769304482dff8fdebe4c002b"
+      ],
+      "tokens": [
+        {
+          "addr": "0x000000000000000000000000000000000000000000000000000000000000000a",
+          "amount": 1996.99810822,
+          "color": "#FFFFFF",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/aptos-black.png",
+          "reserve": 199699810822,
+          "symbol": "APT",
+          "verified": true
+        },
+        {
+          "addr": "0x42556039b88593e768c97ab1a3ab0c6a17230825769304482dff8fdebe4c002b",
+          "amount": 427.19967535,
+          "color": "#78D381",
+          "img": "https://cdn.prod.tapp-dex.devucc.name/token-logos/stkAPT.svg",
+          "reserve": 42719967535,
+          "symbol": "stkAPT",
+          "verified": true
+        }
+      ],
+      "assets_display": "APT, stkAPT",
+      "tvl": 1743.60956241798,
+      "reserves": [
+        199699810822,
+        42719967535
+      ],
+      "reserves_display": "[199,699,810,822, 42,719,967,535]"
+    },
+    {
+      "pool_addr": "0xcd569823a28946403f50ac2888a609997d2a0f5d8d96539a3817a0a6881ce0b7",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0xc2411341418cc557703a536fb1fd0911d2bb563b6f699bbe0de8bd38d03eac28"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1223.558858,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1223558858,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0xc2411341418cc557703a536fb1fd0911d2bb563b6f699bbe0de8bd38d03eac28",
+          "amount": 734326266.472894,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafkreigwkfnhq6whijqz2sxfewrxeapikgdjyg3uxylhzi4gfhiayd737q",
+          "reserve": 734326266472894,
+          "symbol": "PEPTOS",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, PEPTOS",
+      "tvl": 1222.48888024986,
+      "reserves": [
+        1223558858,
+        734326266472894
+      ],
+      "reserves_display": "[1,223,558,858, 734,326,266,472,894]"
+    },
+    {
+      "pool_addr": "0xa725470d2b5cd3e71cb10193f90075675161553f706a5224f45ed1207e458fe9",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0x0e0f14d8d51dc88f73f05afa11e6d769274d04dcfa145995ebff5946e2993522"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1137.383629,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1137383629,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0x0e0f14d8d51dc88f73f05afa11e6d769274d04dcfa145995ebff5946e2993522",
+          "amount": 796230329.070611,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafybeiahq264pjhgxx3xuak3o7eb7xgfshlb2a6snfz6d6p6vaafkeyska",
+          "reserve": 796230329070611,
+          "symbol": "SANAPTOS",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, SANAPTOS",
+      "tvl": 1136.38900976411,
+      "reserves": [
+        1137383629,
+        796230329070611
+      ],
+      "reserves_display": "[1,137,383,629, 796,230,329,070,611]"
+    },
+    {
+      "pool_addr": "0x216c732a1df94466dd12435663195b7390b2b6df0808c264972115abc97aed49",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x017a56e0c9092989424b12e5682eb1db094d4031f2f61cd47c7cec0e916cff73",
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2"
+      ],
+      "tokens": [
+        {
+          "addr": "0x017a56e0c9092989424b12e5682eb1db094d4031f2f61cd47c7cec0e916cff73",
+          "amount": 802081127.241051,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafybeic2yhwmckligf45jj7loubaxmptm3ueutir3jwrpcccckt7un2xiy",
+          "reserve": 802081127241051,
+          "symbol": "LCAT",
+          "verified": true
+        },
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1132.315565,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1132315565,
+          "symbol": "USD1",
+          "verified": true
+        }
+      ],
+      "assets_display": "LCAT, USD1",
+      "tvl": 1131.32537768472,
+      "reserves": [
+        802081127241051,
+        1132315565
+      ],
+      "reserves_display": "[802,081,127,241,051, 1,132,315,565]"
+    },
+    {
+      "pool_addr": "0x2cd7b42b9ea10111d1b69051ed542ca90ae97e547f4a7749d17065442a05d0fe",
+      "hook_type": 2,
+      "hook_type_label": "V2",
+      "assets": [
+        "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+        "0x2c34f7d30cf32e0f21949eadf2c86661ed14626393c37bf2d4793dfe95e89afa"
+      ],
+      "tokens": [
+        {
+          "addr": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
+          "amount": 1130.153408,
+          "color": "#808080",
+          "img": "https://raw.githubusercontent.com/worldliberty/usd1-metadata/refs/heads/main/logo.png",
+          "reserve": 1130153408,
+          "symbol": "USD1",
+          "verified": true
+        },
+        {
+          "addr": "0x2c34f7d30cf32e0f21949eadf2c86661ed14626393c37bf2d4793dfe95e89afa",
+          "amount": 802255118.57628,
+          "color": "#808080",
+          "img": "https://pink-casual-ferret-953.mypinata.cloud/ipfs/bafkreic4mxxlaa6zmzlfx55oytgab4ybmit3y3aphzjhn56gvmgk435y6y",
+          "reserve": 802255118576280,
+          "symbol": "PEACE",
+          "verified": true
+        }
+      ],
+      "assets_display": "USD1, PEACE",
+      "tvl": 1129.16511144777,
+      "reserves": [
+        1130153408,
+        802255118576280
+      ],
+      "reserves_display": "[1,130,153,408, 802,255,118,576,280]"
+    }
+  ]
+}
