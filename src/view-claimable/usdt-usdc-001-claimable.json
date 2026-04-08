@@ -1,0 +1,125 @@
+{
+  "pool_address": "0x82e0b52f95ae57b35220726a32c3415919389aa5b8baa33a058d7125797535cc",
+  "source_positions_file": "/Users/steven/codekeeper/uc/aptos-sdk-playground/src/view-claimable/positions.json",
+  "fixed_tx_version": "4411736842",
+  "latest_ledger_version": "4412320170",
+  "transaction_at_fixed_version": {
+    "version": "4411736842",
+    "hash": "0x135e41a8c1f74a3360eb338046939ab46c41664a631183a24bd439449294ad1b",
+    "type": "user_transaction",
+    "success": true,
+    "vm_status": "Executed successfully"
+  },
+  "positions": [
+    {
+      "position_idx": "192",
+      "claimable_before": [
+        "1",
+        "1"
+      ],
+      "claimable_current": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "position_idx": "492",
+      "claimable_before": [
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "position_idx": "1709",
+      "claimable_before": [
+        "9504",
+        "10235"
+      ],
+      "claimable_current": [
+        "19915",
+        "19433"
+      ]
+    },
+    {
+      "position_idx": "2628",
+      "claimable_before": [
+        "723",
+        "778"
+      ],
+      "claimable_current": [
+        "1515",
+        "1477"
+      ]
+    },
+    {
+      "position_idx": "4544",
+      "claimable_before": [
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "38",
+        "34"
+      ]
+    },
+    {
+      "position_idx": "4889",
+      "claimable_before": [
+        "1",
+        "1"
+      ],
+      "claimable_current": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "position_idx": "5416",
+      "claimable_before": [
+        "1",
+        "2"
+      ],
+      "claimable_current": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "position_idx": "5552",
+      "claimable_before": [
+        "1",
+        "1"
+      ],
+      "claimable_current": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "position_idx": "5754",
+      "claimable_before": [
+        "8",
+        "9"
+      ],
+      "claimable_current": [
+        "17",
+        "17"
+      ]
+    },
+    {
+      "position_idx": "5865",
+      "claimable_before": [
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "0"
+      ]
+    }
+  ]
+}

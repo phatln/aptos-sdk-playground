@@ -1,0 +1,510 @@
+{
+  "pool_address": "0xb5afb711ef141908e5a11c42aae6cb4b08ee4bcf1d5a9961cd882d52b53bd1ec",
+  "source_positions_file": "/Users/steven/codekeeper/uc/aptos-sdk-playground/src/view-claimable/positions.json",
+  "fixed_tx_version": "4411736842",
+  "latest_ledger_version": "4412488468",
+  "transaction_at_fixed_version": {
+    "version": "4411736842",
+    "hash": "0x135e41a8c1f74a3360eb338046939ab46c41664a631183a24bd439449294ad1b",
+    "type": "user_transaction",
+    "success": true,
+    "vm_status": "Executed successfully"
+  },
+  "positions": [
+    {
+      "position_idx": "191",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "159",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "35",
+      "claimable_before": [
+        "5607",
+        "4238"
+      ],
+      "claimable_current": [
+        "59997",
+        "57942"
+      ]
+    },
+    {
+      "position_idx": "155",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "152",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "153",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "181",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "168",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "165",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "157",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "161",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "314",
+      "claimable_before": [
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "54",
+        "53"
+      ]
+    },
+    {
+      "position_idx": "156",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "110",
+      "claimable_before": [
+        "26911",
+        "20339"
+      ],
+      "claimable_current": [
+        "287928",
+        "278061"
+      ]
+    },
+    {
+      "position_idx": "158",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "176",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "160",
+      "claimable_before": [
+        "8",
+        "6"
+      ],
+      "claimable_current": [
+        "89",
+        "86"
+      ]
+    },
+    {
+      "position_idx": "172",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "58"
+      ]
+    },
+    {
+      "position_idx": "166",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "58"
+      ]
+    },
+    {
+      "position_idx": "118",
+      "claimable_before": [
+        "64907",
+        "49056"
+      ],
+      "claimable_current": [
+        "694456",
+        "670658"
+      ]
+    },
+    {
+      "position_idx": "179",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "175",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "162",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "154",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "192",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "171",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "173",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "169",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "167",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "174",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "164",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "177",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "23",
+      "claimable_before": [
+        "3924577",
+        "2966201"
+      ],
+      "claimable_current": [
+        "41990522",
+        "40551672"
+      ]
+    },
+    {
+      "position_idx": "24",
+      "claimable_before": [
+        "1371156",
+        "1036322"
+      ],
+      "claimable_current": [
+        "14670518",
+        "14167817"
+      ]
+    },
+    {
+      "position_idx": "170",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "139",
+      "claimable_before": [
+        "8683",
+        "6563"
+      ],
+      "claimable_current": [
+        "92907",
+        "89724"
+      ]
+    },
+    {
+      "position_idx": "180",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "163",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "182",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "183",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "184",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "185",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "196",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "187",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    },
+    {
+      "position_idx": "188",
+      "claimable_before": [
+        "5",
+        "4"
+      ],
+      "claimable_current": [
+        "59",
+        "57"
+      ]
+    }
+  ]
+}

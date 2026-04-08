@@ -129,22 +129,32 @@ async function run() {
   const txn = await buildTx(
     aptos,
     account,
-    "0x456f3d13a66465b004aaa74e805363ca397c315f565551bdd6090f7d747c00ba::voter::claim_all",
+    "0x8a5ef085f2a8eb714c1462392d52371dfef0f97325d140b605e8306fafcf398b::voter::vote",
     [
-      AccountAddress.from("0xc7da2057cf882197941085d0af27ce474da3a911abe6d2ba3cecdb11dd792c76"),
+      "0xe3739ce080c0e938b1e4c12fa90b19546d4706f6ef1632664775d3ff2416bb8c",
       [
-        AccountAddress.from("0x5e1b3a33ef68351b50456e924011c8a53fcc110644c8f80e0be2f10516fe4214")
+        "0x82e0b52f95ae57b35220726a32c3415919389aa5b8baa33a058d7125797535cc",
+        "0x4ed8fda291b604491ead0cc9e5232bc1edc1f31d0e0cf343be043d8c792af1a8",
+        "0xb5afb711ef141908e5a11c42aae6cb4b08ee4bcf1d5a9961cd882d52b53bd1ec",
+        "0x3004b3e808a2ab9e1589d60ebc2f6ac22ed42403764222cf3e91e891d0111545",
+        "0x76e7c1ad414f50274b371e51b7a272cf774c7027c2e4433b9f82ab47a6e5527b",
+        "0x1527374dcf52dee16b4da3bd0952823e12e5f567939b50cfbc4c3d993b529dca",
+        "0x89d046dc4f666741e5845833cb9506893dea4d83a6403885859a3c70c30cecb7",
+        "0xd50dc4fe4995f10aaa9f4ecd5acb0f5f3713ac8715b217325c57bd52e623d0f5",
+        "0x8f9dd0b94f1c18f96c00dfbff8254f20304f05713bb841d20b203f9446a75b9",
+        "0x1967bf3d06eaa967c00d7535aacdc0fba2570820940b42a79ac34b3a7efe7072"
       ],
       [
-        [
-          AccountAddress.from("0x7538e517af47371976af23a1052bc64172cc65a029d1ef75b453a33d520f0b7f"),
-          AccountAddress.from("0x8c58fb7fd3ccb2d7bc079dcbf924567fccd385b24b0f8afbfdebf87dc671ba07")
-        ]
-      ],
-      [
-        [
-          AccountAddress.from("0xb61f9f829842869968edba4b88f0cf785ac6729fd664f50c7be8c630fd2daebc")
-        ]
+        "10000",
+        "10000",
+        "10000",
+        "10000",
+        "10000",
+        "10000",
+        "10000",
+        "10000",
+        "10000",
+        "10000"
       ]
     ]
   )

@@ -14,7 +14,8 @@
     "dev": "ts-node src/index.ts",
     "get-pool-meta-paginated": "ts-node src/get-pool-meta-paginated.ts",
     "clmm-eval": "ts-node src/clmm-eval/index.ts",
-    "serialize": "ts-node src/serialize/index.ts"
+    "serialize": "ts-node src/serialize/index.ts",
+    "view-claimable": "ts-node src/view-claimable/index.ts"
   },
   "repository": {
     "type": "git",

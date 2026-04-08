@@ -1,0 +1,574 @@
+{
+  "pool_address": "0x76e7c1ad414f50274b371e51b7a272cf774c7027c2e4433b9f82ab47a6e5527b",
+  "source_positions_file": "/Users/steven/codekeeper/uc/aptos-sdk-playground/src/view-claimable/positions.json",
+  "fixed_tx_version": "4411736842",
+  "latest_ledger_version": "4412508641",
+  "transaction_at_fixed_version": {
+    "version": "4411736842",
+    "hash": "0x135e41a8c1f74a3360eb338046939ab46c41664a631183a24bd439449294ad1b",
+    "type": "user_transaction",
+    "success": true,
+    "vm_status": "Executed successfully"
+  },
+  "positions": [
+    {
+      "position_idx": "1329",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "position_idx": "1400",
+      "claimable_before": [
+        "0",
+        "1663",
+        "1108"
+      ],
+      "claimable_current": [
+        "20691",
+        "631083",
+        "626615"
+      ]
+    },
+    {
+      "position_idx": "217",
+      "claimable_before": [
+        "0",
+        "1775",
+        "1183"
+      ],
+      "claimable_current": [
+        "22087",
+        "673642",
+        "668873"
+      ]
+    },
+    {
+      "position_idx": "1960",
+      "claimable_before": [
+        "0",
+        "325682",
+        "108560"
+      ],
+      "claimable_current": [
+        "4051447",
+        "123566096",
+        "122582789"
+      ]
+    },
+    {
+      "position_idx": "1961",
+      "claimable_before": [
+        "0",
+        "35940",
+        "8985"
+      ],
+      "claimable_current": [
+        "1647064",
+        "50137766",
+        "49799328"
+      ]
+    },
+    {
+      "position_idx": "934",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3111",
+        "3088"
+      ]
+    },
+    {
+      "position_idx": "1333",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "position_idx": "846",
+      "claimable_before": [
+        "0",
+        "554",
+        "369"
+      ],
+      "claimable_current": [
+        "6903",
+        "210537",
+        "209046"
+      ]
+    },
+    {
+      "position_idx": "1219",
+      "claimable_before": [
+        "0",
+        "31",
+        "20"
+      ],
+      "claimable_current": [
+        "390",
+        "11921",
+        "11836"
+      ]
+    },
+    {
+      "position_idx": "1221",
+      "claimable_before": [
+        "0",
+        "30",
+        "20"
+      ],
+      "claimable_current": [
+        "378",
+        "11532",
+        "11450"
+      ]
+    },
+    {
+      "position_idx": "935",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3111",
+        "3088"
+      ]
+    },
+    {
+      "position_idx": "1223",
+      "claimable_before": [
+        "0",
+        "2754",
+        "1836"
+      ],
+      "claimable_current": [
+        "34266",
+        "1045088",
+        "1037689"
+      ]
+    },
+    {
+      "position_idx": "936",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3111",
+        "3088"
+      ]
+    },
+    {
+      "position_idx": "91",
+      "claimable_before": [
+        "0",
+        "825",
+        "550"
+      ],
+      "claimable_current": [
+        "10274",
+        "313371",
+        "311153"
+      ]
+    },
+    {
+      "position_idx": "1226",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "position_idx": "1335",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "position_idx": "1962",
+      "claimable_before": [
+        "0",
+        "6155",
+        "2051"
+      ],
+      "claimable_current": [
+        "76576",
+        "2335525",
+        "2316939"
+      ]
+    },
+    {
+      "position_idx": "849",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3114",
+        "3091"
+      ]
+    },
+    {
+      "position_idx": "850",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3114",
+        "3091"
+      ]
+    },
+    {
+      "position_idx": "851",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3114",
+        "3091"
+      ]
+    },
+    {
+      "position_idx": "283",
+      "claimable_before": [
+        "0",
+        "1047",
+        "698"
+      ],
+      "claimable_current": [
+        "13033",
+        "397523",
+        "394712"
+      ]
+    },
+    {
+      "position_idx": "1963",
+      "claimable_before": [
+        "0",
+        "54185",
+        "13546"
+      ],
+      "claimable_current": [
+        "2483203",
+        "75590437",
+        "75080788"
+      ]
+    },
+    {
+      "position_idx": "662",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "position_idx": "228",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "21",
+        "21"
+      ]
+    },
+    {
+      "position_idx": "852",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3114",
+        "3091"
+      ]
+    },
+    {
+      "position_idx": "1227",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "0",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "position_idx": "117",
+      "claimable_before": [
+        "0",
+        "22",
+        "14"
+      ],
+      "claimable_current": [
+        "273",
+        "8355",
+        "8295"
+      ]
+    },
+    {
+      "position_idx": "123",
+      "claimable_before": [
+        "0",
+        "30",
+        "20"
+      ],
+      "claimable_current": [
+        "379",
+        "11587",
+        "11505"
+      ]
+    },
+    {
+      "position_idx": "794",
+      "claimable_before": [
+        "0",
+        "5",
+        "3"
+      ],
+      "claimable_current": [
+        "67",
+        "2064",
+        "2049"
+      ]
+    },
+    {
+      "position_idx": "795",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "5",
+        "155",
+        "154"
+      ]
+    },
+    {
+      "position_idx": "242",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "2",
+        "85",
+        "85"
+      ]
+    },
+    {
+      "position_idx": "243",
+      "claimable_before": [
+        "0",
+        "219",
+        "146"
+      ],
+      "claimable_current": [
+        "2735",
+        "83417",
+        "82825"
+      ]
+    },
+    {
+      "position_idx": "796",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "1",
+        "31",
+        "30"
+      ]
+    },
+    {
+      "position_idx": "138",
+      "claimable_before": [
+        "0",
+        "6240",
+        "4160"
+      ],
+      "claimable_current": [
+        "77629",
+        "2367683",
+        "2350896"
+      ]
+    },
+    {
+      "position_idx": "862",
+      "claimable_before": [
+        "0",
+        "8",
+        "5"
+      ],
+      "claimable_current": [
+        "102",
+        "3114",
+        "3091"
+      ]
+    },
+    {
+      "position_idx": "1",
+      "claimable_before": [
+        "0",
+        "491990",
+        "327993"
+      ],
+      "claimable_current": [
+        "6120305",
+        "186668279",
+        "185344764"
+      ]
+    },
+    {
+      "position_idx": "143",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "10",
+        "312",
+        "310"
+      ]
+    },
+    {
+      "position_idx": "2",
+      "claimable_before": [
+        "0",
+        "413259",
+        "275506"
+      ],
+      "claimable_current": [
+        "5140894",
+        "156798750",
+        "155690389"
+      ]
+    },
+    {
+      "position_idx": "295",
+      "claimable_before": [
+        "0",
+        "1",
+        "1"
+      ],
+      "claimable_current": [
+        "23",
+        "718",
+        "713"
+      ]
+    },
+    {
+      "position_idx": "296",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "10",
+        "312",
+        "310"
+      ]
+    },
+    {
+      "position_idx": "681",
+      "claimable_before": [
+        "0",
+        "2",
+        "1"
+      ],
+      "claimable_current": [
+        "34",
+        "1064",
+        "1056"
+      ]
+    },
+    {
+      "position_idx": "559",
+      "claimable_before": [
+        "0",
+        "37259",
+        "24839"
+      ],
+      "claimable_current": [
+        "463508",
+        "14137152",
+        "14037221"
+      ]
+    },
+    {
+      "position_idx": "776",
+      "claimable_before": [
+        "0",
+        "0",
+        "0"
+      ],
+      "claimable_current": [
+        "1",
+        "31",
+        "30"
+      ]
+    }
+  ]
+}
