@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import path from "node:path";
 import { promisify } from "node:util";
@@ -37,6 +37,7 @@ type BinarySearchState = {
 
 const BINARY_SEARCH_STATE_PATH = path.join(__dirname, "last_binary_search.json");
 const TARGET_SYMBOLS = ["USDT", "USDC"] as const;
+const AGGREGATE_OUTPUT_DIR = path.join(__dirname, "aggre-reserves");
 const execFileAsync = promisify(execFile);
 
 function parseArgs() {
@@ -53,6 +54,13 @@ function csvCell(value: string): string {
     return `"${value.replace(/"/g, "\"\"")}"`;
   }
   return value;
+}
+
+function printBanner(label: "FINISH" | "DONE") {
+  const line = "=".repeat(label.length + 8);
+  console.log(line);
+  console.log(`=== ${label} ===`);
+  console.log(line);
 }
 
 function parseBound(value: number | string, fieldName: string): bigint {
@@ -99,12 +107,27 @@ async function writeBinarySearchState(lower: bigint, upper: bigint): Promise<voi
 }
 
 async function ensureSourceFiles(txVersion: string): Promise<void> {
-  await execFileAsync("npx", ["ts-node", "src/pool-reserves/pool-balances.ts", txVersion], {
+  console.log(`Fetching pool reserves for tx=${txVersion}`);
+  const poolResult = await execFileAsync("npx", ["ts-node", "src/pool-reserves/pool-balances.ts", txVersion], {
     cwd: process.cwd(),
   });
-  await execFileAsync("npx", ["ts-node", "src/pool-reserves/account-balances.ts", txVersion], {
+  if (poolResult.stdout.trim()) {
+    console.log(poolResult.stdout.trim());
+  }
+  if (poolResult.stderr.trim()) {
+    console.error(poolResult.stderr.trim());
+  }
+
+  console.log(`Fetching vault reserves for tx=${txVersion}`);
+  const vaultResult = await execFileAsync("npx", ["ts-node", "src/pool-reserves/account-balances.ts", txVersion], {
     cwd: process.cwd(),
   });
+  if (vaultResult.stdout.trim()) {
+    console.log(vaultResult.stdout.trim());
+  }
+  if (vaultResult.stderr.trim()) {
+    console.error(vaultResult.stderr.trim());
+  }
 }
 
 async function main() {
@@ -112,10 +135,14 @@ async function main() {
   const baseDir = __dirname;
   const state = await readBinarySearchState();
   const txVersion = txVersionArg ?? ((state.lower + state.upper) / 2n).toString();
+  console.log(
+    `Binary search start: lower=${state.lower.toString()} upper=${state.upper.toString()} tx=${txVersion}`
+  );
   await ensureSourceFiles(txVersion);
   const vaultPath = path.join(baseDir, "vault-reserves", `vault-${txVersion}.json`);
   const poolPath = path.join(baseDir, "pool-reserves", `pool-${txVersion}.json`);
-  const outputPath = path.join(baseDir, `vault-pool-${txVersion}.csv`);
+  await mkdir(AGGREGATE_OUTPUT_DIR, { recursive: true });
+  const outputPath = path.join(AGGREGATE_OUTPUT_DIR, `vault-pool-${txVersion}.csv`);
 
   const [poolsRaw, vaultRaw, poolReservesRaw] = await Promise.all([
     readFile(DEFAULT_POOL_LIST_PATH, "utf8"),
@@ -230,6 +257,7 @@ async function main() {
   console.log(
     `Updated ${BINARY_SEARCH_STATE_PATH} -> lower=${nextLower.toString()} upper=${nextUpper.toString()}`
   );
+  printBanner(nextLower === nextUpper ? "DONE" : "FINISH");
 }
 
 main().catch((error) => {
