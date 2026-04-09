@@ -155,20 +155,31 @@ async function main() {
     const balances: AssetEntry[] = [];
 
     for (const asset of assets) {
-      const [balance] = await aptos.view<[string]>({
-        payload: {
-          function: asFunctionId(PRIMARY_FUNGIBLE_STORE_BALANCE_FUNCTION),
-          typeArguments: ["0x1::object::ObjectCore"],
-          functionArguments: [accountAddress, asset.assetAddress],
-        },
-        options: { ledgerVersion: currentLedgerVersion },
-      });
+      let balance = "0";
+
+      try {
+        const [fetchedBalance] = await aptos.view<[string]>({
+          payload: {
+            function: asFunctionId(PRIMARY_FUNGIBLE_STORE_BALANCE_FUNCTION),
+            typeArguments: ["0x1::object::ObjectCore"],
+            functionArguments: [accountAddress, asset.assetAddress],
+          },
+          options: { ledgerVersion: currentLedgerVersion },
+        });
+        balance = String(fetchedBalance);
+      } catch (error) {
+        console.warn(
+          `Failed asset=${asset.assetAddress} ledger=${currentLedgerVersion.toString()}: ${
+            error instanceof Error ? error.message : String(error)
+          }. Using 0.`
+        );
+      }
 
       balances.push({
         asset_address: asset.assetAddress,
         symbol: asset.symbol,
         pools: asset.pools,
-        balance: String(balance),
+        balance,
       });
     }
 
