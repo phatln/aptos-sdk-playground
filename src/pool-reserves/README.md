@@ -1,1 +1,1 @@
-npx ts-node src/pool-reserves/main.ts 4717439521
+npx ts-node src/pool-reserves/pool-balances.ts 4717439521
