@@ -8,6 +8,9 @@ import {
 } from "@aptos-labs/ts-sdk";
 import {
   getPackageAddresses,
+  ALIAS_POOL_ADDRESS,
+  ALIAS_POOL_VIEW_FUNCTION,
+  HOOK_TYPE_ALIAS,
   HOOK_TYPE_AMM,
   HOOK_TYPE_CLMM,
   HOOK_TYPE_STABLE,
@@ -15,7 +18,12 @@ import {
   PRIMARY_FUNGIBLE_STORE_BALANCE_FUNCTION,
   VIEWS_PACKAGE_ADDRESS,
 } from "./constants";
-import { PoolReservesOutput, PoolReservesRecord, PoolSpec } from "./types";
+import {
+  AliasPoolReservesOutput,
+  PoolReservesOutput,
+  PoolReservesRecord,
+  PoolSpec,
+} from "./types";
 
 function textBytes(value: string): Uint8Array {
   return new TextEncoder().encode(value);
@@ -52,6 +60,32 @@ function getReservesFunction(pool: PoolSpec, packages: PackageAddresses): string
 
 function asFunctionId(value: string): `${string}::${string}::${string}` {
   return value as `${string}::${string}::${string}`;
+}
+
+function normalizeViewValue(value: unknown): unknown {
+  if (typeof value === "bigint") {
+    return value.toString();
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) => normalizeViewValue(item));
+  }
+
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, normalizeViewValue(item)])
+    );
+  }
+
+  return value;
+}
+
+function normalizeStringArray(value: unknown): string[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value.map((item) => String(item));
 }
 
 function deriveVirtualAssetAddress(poolAddress: string, assetAddress: string, packages: PackageAddresses): string {
@@ -224,5 +258,34 @@ export async function fetchLedgerSnapshot(
       PRIMARY_FUNGIBLE_STORE_BALANCE_FUNCTION,
     ],
     pools: results,
+  };
+}
+
+export async function fetchAliasPoolSnapshot(
+  aptos: Aptos,
+  ledgerVersion: bigint,
+  network: Network
+): Promise<AliasPoolReservesOutput> {
+  const rawResult = await aptos.viewJson<unknown[]>({
+    payload: {
+      function: asFunctionId(ALIAS_POOL_VIEW_FUNCTION),
+      typeArguments: [],
+      functionArguments: ["0x92b0e7194ae1b55cc2b55c127dac4c6a37a832a10bea4f68f02855f997ae3066"],
+    },
+    options: { ledgerVersion },
+  });
+  const normalizedResult = normalizeViewValue(rawResult);
+  const assets = normalizeStringArray(Array.isArray(normalizedResult) ? normalizedResult[0] : undefined);
+  const reserves = normalizeStringArray(Array.isArray(normalizedResult) ? normalizedResult[1] : undefined);
+
+  return {
+    ledger_version: ledgerVersion,
+    network,
+    pool_address: ALIAS_POOL_ADDRESS,
+    hook_type: HOOK_TYPE_ALIAS,
+    view_function: ALIAS_POOL_VIEW_FUNCTION,
+    assets,
+    reserves,
+    raw_result: normalizedResult,
   };
 }

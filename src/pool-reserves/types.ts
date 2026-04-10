@@ -37,3 +37,14 @@ export type PoolReservesOutput = {
   view_functions: string[];
   pools: PoolReservesRecord[];
 };
+
+export type AliasPoolReservesOutput = {
+  ledger_version: bigint;
+  network: Network;
+  pool_address: string;
+  hook_type: number;
+  view_function: string;
+  assets: string[];
+  reserves: string[];
+  raw_result: unknown;
+};
