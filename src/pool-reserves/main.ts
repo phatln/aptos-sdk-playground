@@ -67,6 +67,13 @@ function csvCell(value: string): string {
   return value;
 }
 
+function normalizeAddress(value?: string): string | undefined {
+  if (!value) return undefined;
+  const trimmed = value.trim().toLowerCase();
+  if (!/^0x[0-9a-f]+$/.test(trimmed)) return undefined;
+  return `0x${trimmed.slice(2).padStart(64, "0")}`;
+}
+
 function printBanner(label: "FINISH" | "DONE") {
   const line = "=".repeat(label.length + 8);
   console.log(line);
@@ -159,11 +166,15 @@ async function ensureSourceFiles(txVersion: string): Promise<void> {
 async function main() {
   const { txVersion: txVersionArg } = parseArgs();
   const baseDir = __dirname;
-  const state = await readBinarySearchState();
-  const txVersion = txVersionArg ?? ((state.lower + state.upper) / 2n).toString();
-  console.log(
-    `Binary search start: lower=${state.lower.toString()} upper=${state.upper.toString()} tx=${txVersion}`
-  );
+  const state = txVersionArg ? undefined : await readBinarySearchState();
+  const txVersion = txVersionArg ?? ((state!.lower + state!.upper) / 2n).toString();
+  if (state) {
+    console.log(
+      `Binary search start: lower=${state.lower.toString()} upper=${state.upper.toString()} tx=${txVersion}`
+    );
+  } else {
+    console.log(`Explicit run: tx=${txVersion}`);
+  }
   await ensureSourceFiles(txVersion);
   const vaultPath = path.join(baseDir, "vault-reserves", `vault-${txVersion}.json`);
   const poolPath = path.join(baseDir, "pool-reserves", `pool-${txVersion}.json`);
@@ -217,30 +228,34 @@ async function main() {
 
   const lines: string[] = [];
   lines.push(headers.map(csvCell).join(","));
-  const aliasAssets = aliasJson.assets ?? aliasJson.raw_result?.[0]?.assets ?? [];
-  const aliasReserves = aliasJson.reserves ?? aliasJson.raw_result?.[0]?.reserves ?? [];
+  const aliasAssets =
+    aliasJson.assets && aliasJson.assets.length > 0 ? aliasJson.assets : aliasJson.raw_result?.[0]?.assets ?? [];
+  const aliasReserves =
+    aliasJson.reserves && aliasJson.reserves.length > 0
+      ? aliasJson.reserves
+      : aliasJson.raw_result?.[0]?.reserves ?? [];
   const aliasPoolAddress =
     aliasJson.pool_address?.trim() ?? aliasJson.raw_result?.[0]?.pool_addr?.trim() ?? "0xalias";
   const aliasReserveByAsset = new Map<string, string>();
 
   for (let i = 0; i < aliasAssets.length; i += 1) {
-    const asset = aliasAssets[i]?.trim();
+    const asset = normalizeAddress(aliasAssets[i]);
     if (!asset) continue;
     aliasReserveByAsset.set(asset, aliasReserves[i] ?? "N/A");
   }
 
   lines.push(
     [
-      aliasPoolAddress,
-      ...orderedAssets.map((asset) => aliasReserveByAsset.get(asset) ?? "N/A"),
+      "0x0 (vault)",
+      ...orderedAssets.map((asset) => vaultBalanceByAsset.get(asset) ?? "0"),
     ]
       .map(csvCell)
       .join(",")
   );
   lines.push(
     [
-      "0x0 (vault)",
-      ...orderedAssets.map((asset) => vaultBalanceByAsset.get(asset) ?? "0"),
+      aliasPoolAddress,
+      ...orderedAssets.map((asset) => aliasReserveByAsset.get(asset) ?? "N/A"),
     ]
       .map(csvCell)
       .join(",")
@@ -302,19 +317,23 @@ async function main() {
 
   await writeFile(outputPath, `${lines.join("\n")}\n`, "utf8");
   const median = BigInt(txVersion);
-  const anyPoolGreaterThanVault = TARGET_SYMBOLS.some((symbol) => {
-    const poolTotal = poolTotals.get(symbol);
-    const vaultTotal = vaultTotals.get(symbol);
-    return poolTotal !== undefined && vaultTotal !== undefined && poolTotal > vaultTotal;
-  });
-  const nextLower = anyPoolGreaterThanVault ? state.lower : median;
-  const nextUpper = anyPoolGreaterThanVault ? median : state.upper;
-  await writeBinarySearchState(nextLower, nextUpper);
   console.log(`Wrote ${outputPath}`);
-  console.log(
-    `Updated ${BINARY_SEARCH_STATE_PATH} -> lower=${nextLower.toString()} upper=${nextUpper.toString()}`
-  );
-  printBanner(nextLower === nextUpper ? "DONE" : "FINISH");
+  if (state) {
+    const anyPoolGreaterThanVault = TARGET_SYMBOLS.some((symbol) => {
+      const poolTotal = poolTotals.get(symbol);
+      const vaultTotal = vaultTotals.get(symbol);
+      return poolTotal !== undefined && vaultTotal !== undefined && poolTotal > vaultTotal;
+    });
+    const nextLower = anyPoolGreaterThanVault ? state.lower : median;
+    const nextUpper = anyPoolGreaterThanVault ? median : state.upper;
+    await writeBinarySearchState(nextLower, nextUpper);
+    console.log(
+      `Updated ${BINARY_SEARCH_STATE_PATH} -> lower=${nextLower.toString()} upper=${nextUpper.toString()}`
+    );
+    printBanner(nextLower === nextUpper ? "DONE" : "FINISH");
+  } else {
+    printBanner("FINISH");
+  }
 }
 
 main().catch((error) => {
