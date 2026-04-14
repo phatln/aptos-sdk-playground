@@ -226,6 +226,14 @@ async function main() {
 
   const lines: string[] = [];
   lines.push(headers.map(csvCell).join(","));
+  lines.push(
+    [
+      "0x0 (vault)",
+      ...orderedAssets.map((asset) => vaultBalanceByAsset.get(asset) ?? "0"),
+    ]
+      .map(csvCell)
+      .join(",")
+  );
   const aliasPoolMeta =
     (poolMetaJson.pools ?? []).find(
       (pool) =>
@@ -247,14 +255,6 @@ async function main() {
     [
       aliasPoolAddress,
       ...orderedAssets.map((asset) => aliasReserveByAsset.get(asset) ?? "N/A"),
-    ]
-      .map(csvCell)
-      .join(",")
-  );
-  lines.push(
-    [
-      "0x0 (vault)",
-      ...orderedAssets.map((asset) => vaultBalanceByAsset.get(asset) ?? "0"),
     ]
       .map(csvCell)
       .join(",")
