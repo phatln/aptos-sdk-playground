@@ -8,9 +8,7 @@ import {
 } from "@aptos-labs/ts-sdk";
 import {
   getPackageAddresses,
-  ALIAS_POOL_ADDRESS,
-  ALIAS_POOL_VIEW_FUNCTION,
-  HOOK_TYPE_ALIAS,
+  GET_POOL_META_VIEW_FN,
   HOOK_TYPE_AMM,
   HOOK_TYPE_CLMM,
   HOOK_TYPE_STABLE,
@@ -19,7 +17,8 @@ import {
   VIEWS_PACKAGE_ADDRESS,
 } from "./constants";
 import {
-  AliasPoolReservesOutput,
+  PoolMetaOutput,
+  PoolMetaRecord,
   PoolReservesOutput,
   PoolReservesRecord,
   PoolSpec,
@@ -237,8 +236,7 @@ export async function fetchLedgerSnapshot(
       });
 
       console.warn(
-        `Failed pool=${pool.poolAddress} ledger=${ledgerVersion.toString()}: ${
-          error instanceof Error ? error.message : String(error)
+        `Failed pool=${pool.poolAddress} ledger=${ledgerVersion.toString()}: ${error instanceof Error ? error.message : String(error)
         }`
       );
     }
@@ -261,31 +259,75 @@ export async function fetchLedgerSnapshot(
   };
 }
 
-export async function fetchAliasPoolSnapshot(
+export async function fetchPoolMeta(
   aptos: Aptos,
-  ledgerVersion: bigint,
-  network: Network
-): Promise<AliasPoolReservesOutput> {
+  pool: PoolSpec,
+  ledgerVersion: bigint
+): Promise<PoolMetaRecord> {
   const rawResult = await aptos.viewJson<unknown[]>({
     payload: {
-      function: asFunctionId(ALIAS_POOL_VIEW_FUNCTION),
+      function: asFunctionId(GET_POOL_META_VIEW_FN),
       typeArguments: [],
-      functionArguments: ["0x92b0e7194ae1b55cc2b55c127dac4c6a37a832a10bea4f68f02855f997ae3066"],
+      functionArguments: [pool.poolAddress],
     },
     options: { ledgerVersion },
   });
   const normalizedResult = normalizeViewValue(rawResult);
-  const assets = normalizeStringArray(Array.isArray(normalizedResult) ? normalizedResult[0] : undefined);
-  const reserves = normalizeStringArray(Array.isArray(normalizedResult) ? normalizedResult[1] : undefined);
+  const firstResult =
+    Array.isArray(normalizedResult) &&
+      normalizedResult.length > 0 &&
+      normalizedResult[0] &&
+      typeof normalizedResult[0] === "object"
+      ? (normalizedResult[0] as Record<string, unknown>)
+      : undefined;
+  const assets = normalizeStringArray(firstResult?.assets);
+  const reserves = normalizeStringArray(firstResult?.reserves);
+  const hookType = typeof firstResult?.hook_type === "number" ? firstResult.hook_type : pool.hookType;
+
+  return {
+    pool_address: pool.poolAddress,
+    hook_type: hookType,
+    assets,
+    reserves,
+    raw_result: firstResult ?? normalizedResult,
+  };
+}
+
+export async function fetchPoolMetaSnapshot(
+  aptos: Aptos,
+  ledgerVersion: bigint,
+  pools: PoolSpec[],
+  network: Network,
+  poolListPath: string
+): Promise<PoolMetaOutput> {
+  const results: PoolMetaRecord[] = [];
+
+  for (const pool of pools) {
+    try {
+      results.push(await fetchPoolMeta(aptos, pool, ledgerVersion));
+    } catch (error) {
+      results.push({
+        pool_address: pool.poolAddress,
+        hook_type: pool.hookType,
+        assets: [],
+        reserves: [],
+        raw_result: null,
+      });
+
+      console.warn(
+        `Failed pool-meta pool=${pool.poolAddress} ledger=${ledgerVersion.toString()}: ${
+          error instanceof Error ? error.message : String(error)
+        }`
+      );
+    }
+  }
 
   return {
     ledger_version: ledgerVersion,
     network,
-    pool_address: ALIAS_POOL_ADDRESS,
-    hook_type: HOOK_TYPE_ALIAS,
-    view_function: ALIAS_POOL_VIEW_FUNCTION,
-    assets,
-    reserves,
-    raw_result: normalizedResult,
+    pool_list_file: poolListPath,
+    pool_count: pools.length,
+    view_function: GET_POOL_META_VIEW_FN,
+    pools: results,
   };
 }

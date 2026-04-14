@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import path from "node:path";
 import { promisify } from "node:util";
-import { DEFAULT_POOL_LIST_PATH } from "./constants";
+import { DEFAULT_POOL_LIST_PATH, HOOK_TYPE_ALIAS, SPECIAL_ALIAS_POOL_ADDRESS } from "./constants";
 
 type PoolsJson = {
   pools?: Array<{
@@ -30,12 +30,10 @@ type PoolReservesJson = {
   }>;
 };
 
-type AliasPoolJson = {
-  pool_address?: string;
-  assets?: string[];
-  reserves?: string[];
-  raw_result?: Array<{
-    pool_addr?: string;
+type PoolMetaJson = {
+  pools?: Array<{
+    pool_address?: string;
+    hook_type?: number;
     assets?: string[];
     reserves?: string[];
   }>;
@@ -47,7 +45,7 @@ type BinarySearchState = {
 };
 
 const BINARY_SEARCH_STATE_PATH = path.join(__dirname, "last_binary_search.json");
-const TARGET_SYMBOLS = ["USDT", "USDC"] as const;
+const TARGET_SYMBOLS = ["goAPT"] as const;
 const AGGREGATE_OUTPUT_DIR = path.join(__dirname, "aggre-reserves");
 const execFileAsync = promisify(execFile);
 
@@ -147,19 +145,19 @@ async function ensureSourceFiles(txVersion: string): Promise<void> {
     console.error(vaultResult.stderr.trim());
   }
 
-  console.log(`Fetching alias pool reserves for tx=${txVersion}`);
-  const aliasResult = await execFileAsync(
+  console.log(`Fetching pool meta balances for tx=${txVersion}`);
+  const poolMetaResult = await execFileAsync(
     "npx",
-    ["ts-node", "src/pool-reserves/alias-pool-balances.ts", txVersion],
+    ["ts-node", "src/pool-reserves/pool-meta-balances.ts", txVersion],
     {
       cwd: process.cwd(),
     }
   );
-  if (aliasResult.stdout.trim()) {
-    console.log(aliasResult.stdout.trim());
+  if (poolMetaResult.stdout.trim()) {
+    console.log(poolMetaResult.stdout.trim());
   }
-  if (aliasResult.stderr.trim()) {
-    console.error(aliasResult.stderr.trim());
+  if (poolMetaResult.stderr.trim()) {
+    console.error(poolMetaResult.stderr.trim());
   }
 }
 
@@ -178,21 +176,21 @@ async function main() {
   await ensureSourceFiles(txVersion);
   const vaultPath = path.join(baseDir, "vault-reserves", `vault-${txVersion}.json`);
   const poolPath = path.join(baseDir, "pool-reserves", `pool-${txVersion}.json`);
-  const aliasPath = path.join(baseDir, "alias-pool-reserves", `alias-pool-${txVersion}.json`);
+  const poolMetaPath = path.join(baseDir, "pool-meta-reserves", `pool-meta-${txVersion}.json`);
   await mkdir(AGGREGATE_OUTPUT_DIR, { recursive: true });
   const outputPath = path.join(AGGREGATE_OUTPUT_DIR, `vault-pool-${txVersion}.csv`);
 
-  const [poolsRaw, vaultRaw, poolReservesRaw, aliasRaw] = await Promise.all([
+  const [poolsRaw, vaultRaw, poolReservesRaw, poolMetaRaw] = await Promise.all([
     readFile(DEFAULT_POOL_LIST_PATH, "utf8"),
     readFile(vaultPath, "utf8"),
     readFile(poolPath, "utf8"),
-    readFile(aliasPath, "utf8"),
+    readFile(poolMetaPath, "utf8"),
   ]);
 
   const poolsJson = JSON.parse(poolsRaw) as PoolsJson;
   const vaultJson = JSON.parse(vaultRaw) as VaultJson;
   const poolReservesJson = JSON.parse(poolReservesRaw) as PoolReservesJson;
-  const aliasJson = JSON.parse(aliasRaw) as AliasPoolJson;
+  const poolMetaJson = JSON.parse(poolMetaRaw) as PoolMetaJson;
 
   const symbolByAsset = new Map<string, string>();
   for (const pool of poolsJson.pools ?? []) {
@@ -228,14 +226,15 @@ async function main() {
 
   const lines: string[] = [];
   lines.push(headers.map(csvCell).join(","));
-  const aliasAssets =
-    aliasJson.assets && aliasJson.assets.length > 0 ? aliasJson.assets : aliasJson.raw_result?.[0]?.assets ?? [];
-  const aliasReserves =
-    aliasJson.reserves && aliasJson.reserves.length > 0
-      ? aliasJson.reserves
-      : aliasJson.raw_result?.[0]?.reserves ?? [];
-  const aliasPoolAddress =
-    aliasJson.pool_address?.trim() ?? aliasJson.raw_result?.[0]?.pool_addr?.trim() ?? "0xalias";
+  const aliasPoolMeta =
+    (poolMetaJson.pools ?? []).find(
+      (pool) =>
+        normalizeAddress(pool.pool_address) === normalizeAddress(SPECIAL_ALIAS_POOL_ADDRESS) ||
+        pool.hook_type === HOOK_TYPE_ALIAS
+    ) ?? null;
+  const aliasAssets = aliasPoolMeta?.assets ?? [];
+  const aliasReserves = aliasPoolMeta?.reserves ?? [];
+  const aliasPoolAddress = aliasPoolMeta?.pool_address?.trim() ?? SPECIAL_ALIAS_POOL_ADDRESS;
   const aliasReserveByAsset = new Map<string, string>();
 
   for (let i = 0; i < aliasAssets.length; i += 1) {
@@ -246,16 +245,16 @@ async function main() {
 
   lines.push(
     [
-      "0x0 (vault)",
-      ...orderedAssets.map((asset) => vaultBalanceByAsset.get(asset) ?? "0"),
+      aliasPoolAddress,
+      ...orderedAssets.map((asset) => aliasReserveByAsset.get(asset) ?? "N/A"),
     ]
       .map(csvCell)
       .join(",")
   );
   lines.push(
     [
-      aliasPoolAddress,
-      ...orderedAssets.map((asset) => aliasReserveByAsset.get(asset) ?? "N/A"),
+      "0x0 (vault)",
+      ...orderedAssets.map((asset) => vaultBalanceByAsset.get(asset) ?? "0"),
     ]
       .map(csvCell)
       .join(",")

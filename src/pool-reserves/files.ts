@@ -1,6 +1,6 @@
 import { access, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import { ALIAS_OUTPUT_DIR, OUTPUT_DIR } from "./constants";
+import { OUTPUT_DIR, POOL_META_OUTPUT_DIR } from "./constants";
 import { PoolListFile, PoolSpec } from "./types";
 
 export async function fileExists(filePath: string): Promise<boolean> {
@@ -75,10 +75,10 @@ export function outputPathForLedgerVersion(ledgerVersion: bigint): string {
   return path.join(OUTPUT_DIR, `pool-${ledgerVersion.toString()}.json`);
 }
 
-export async function ensureAliasOutputDir(): Promise<void> {
-  await mkdir(ALIAS_OUTPUT_DIR, { recursive: true });
+export async function ensurePoolMetaOutputDir(): Promise<void> {
+  await mkdir(POOL_META_OUTPUT_DIR, { recursive: true });
 }
 
-export function aliasOutputPathForLedgerVersion(ledgerVersion: bigint): string {
-  return path.join(ALIAS_OUTPUT_DIR, `alias-pool-${ledgerVersion.toString()}.json`);
+export function poolMetaOutputPathForLedgerVersion(ledgerVersion: bigint): string {
+  return path.join(POOL_META_OUTPUT_DIR, `pool-meta-${ledgerVersion.toString()}.json`);
 }
