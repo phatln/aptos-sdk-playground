@@ -46,6 +46,8 @@ type BinarySearchState = {
 
 const BINARY_SEARCH_STATE_PATH = path.join(__dirname, "last_binary_search.json");
 const TARGET_SYMBOLS = ["goAPT"] as const;
+const GOAPT_DECIMALS = 8n;
+const GOAPT_THRESHOLD = 10n ** GOAPT_DECIMALS;
 const AGGREGATE_OUTPUT_DIR = path.join(__dirname, "aggre-reserves");
 const execFileAsync = promisify(execFile);
 
@@ -321,7 +323,15 @@ async function main() {
     const anyPoolGreaterThanVault = TARGET_SYMBOLS.some((symbol) => {
       const poolTotal = poolTotals.get(symbol);
       const vaultTotal = vaultTotals.get(symbol);
-      return poolTotal !== undefined && vaultTotal !== undefined && poolTotal > vaultTotal;
+      if (poolTotal === undefined || vaultTotal === undefined) {
+        return false;
+      }
+
+      if (symbol === "goAPT") {
+        return poolTotal > vaultTotal + GOAPT_THRESHOLD;
+      }
+
+      return poolTotal > vaultTotal;
     });
     const nextLower = anyPoolGreaterThanVault ? state.lower : median;
     const nextUpper = anyPoolGreaterThanVault ? median : state.upper;
