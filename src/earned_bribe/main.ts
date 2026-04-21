@@ -19,8 +19,7 @@ type LocksJson = Record<string, number | string>;
 type EarnedResult = {
   token_addr: string;
   lock_amount: string;
-  earned?: string;
-  error?: string;
+  earned: string;
 };
 
 function parseNetwork(input?: string): Network {
@@ -50,10 +49,11 @@ function parseArgs() {
   };
 }
 
-function jsonReplacer(_key: string, value: unknown) {
-  if (typeof value === "bigint") {
-    return value.toString();
+function csvCell(value: string): string {
+  if (/[",\n]/.test(value)) {
+    return `"${value.replace(/"/g, "\"\"")}"`;
   }
+
   return value;
 }
 
@@ -85,6 +85,8 @@ async function main() {
   const { txVersion: cliTxVersion } = parseArgs();
   const network = parseNetwork(process.env.APTOS_NETWORK ?? process.env.NETWORK);
   const apiKey = process.env.APTOS_API_KEY ?? process.env.API_KEY;
+  console.log(apiKey);
+  
   const aptos = new Aptos(
     new AptosConfig({
       network,
@@ -109,7 +111,7 @@ async function main() {
         payload: {
           function: VIEW_FUNCTION,
           typeArguments: [],
-          functionArguments: [POOL_ADDR, REWARD_ADDR, lock.tokenAddr],
+          functionArguments: [POOL_ADDR, lock.tokenAddr, REWARD_ADDR],
         },
         options: { ledgerVersion: txVersion },
       });
@@ -120,29 +122,28 @@ async function main() {
         earned: String(earned),
       });
     } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`Failed token=${lock.tokenAddr} tx_version=${txVersion.toString()}: ${message}`);
       results.push({
         token_addr: lock.tokenAddr,
         lock_amount: lock.lockAmount,
-        error: error instanceof Error ? error.message : String(error),
+        earned: "N/A",
       });
     }
   }
 
   await mkdir(OUTPUT_DIR, { recursive: true });
-  const outputPath = path.join(OUTPUT_DIR, `earned-${txVersion.toString()}.json`);
-  const output = {
-    network,
-    locks_file: LOCKS_PATH,
-    pool_addr: POOL_ADDR,
-    reward_addr: REWARD_ADDR,
-    view_function: VIEW_FUNCTION,
-    tx_version: txVersion.toString(),
-    latest_ledger_version: ledgerInfo?.ledger_version,
-    result_count: results.length,
-    results,
-  };
+  const outputPath = path.join(OUTPUT_DIR, `earned-${txVersion.toString()}.csv`);
+  const lines = [
+    ["token_addr", "lock_amount", "earned"].map(csvCell).join(","),
+    ...results.map((result) =>
+      [result.token_addr, result.lock_amount, result.earned]
+        .map((value) => csvCell(String(value)))
+        .join(",")
+    ),
+  ];
 
-  await writeFile(outputPath, JSON.stringify(output, jsonReplacer, 2) + "\n", "utf8");
+  await writeFile(outputPath, `${lines.join("\n")}\n`, "utf8");
   console.log(`Wrote ${outputPath}`);
 }
 

@@ -31,7 +31,8 @@ Example:
 - If you pass a tx version, the script queries the view at that exact ledger version.
 - If you do not pass a tx version, the script fetches the latest ledger version from the Aptos SDK and uses that value.
 - Token addresses are normalized to full 32-byte Aptos addresses before querying.
-- Results are written to `src/earned_bribe/earned-<tx_version>.json`.
+- If a token query fails, the script prints the error to the console and writes `N/A` for that token's earned value.
+- Results are written to `src/earned_bribe/earned-<tx_version>.csv`.
 
 ## How To Run
 
@@ -56,17 +57,10 @@ Optional environment variables:
 
 ## Output
 
-The output JSON includes:
+The output is a CSV file with these columns:
 
-- network
-- source `locks.json` path
-- hardcoded `pool_addr`
-- hardcoded `reward_addr`
-- view function id
-- tx version used
-- latest ledger version when auto-resolved
-- one result per token, including:
-  - `token_addr`
-  - `lock_amount`
-  - `earned`, or
-  - `error` if the view call failed for that token
+- `token_addr`
+- `lock_amount`
+- `earned`
+
+If a query fails for a token, the `earned` column is written as `N/A` and the fetch error is printed to the console.
